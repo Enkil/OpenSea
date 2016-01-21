@@ -1,0 +1,39 @@
+.footer{
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text{
+    color: $grey-4;
+    font-family: "ProximaNova-Light";
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 300;
+    margin: 0;
+    display: inline-block;
+    > a{
+      font-family: "ProximaNova-Bold";
+      color: $grey-4;
+      text-decoration: none;
+    }
+  }
+  .slogan-img{
+    width: 135px;
+    height: 22px;
+  }
+  .copyright{
+    color: $grey-4;
+    font-family: "ProximaNova-Light";
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}

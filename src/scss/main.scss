@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+// Import vendor CSS files
+// =======================
+@import "utils/variables";
+@import "vendor/mq";
+@import "../../bower_components/flex-sass-grid-generator/src/scss/flex-sass-grid-generator";
+
+// Import common custom SCSS files
+// ===============================
+//@import "utils/variables";
+@import "mixins/font-face";
+@import "mixins/transitions";
+@import "utils/png-sprite";
+@import "utils/svg-sprite";
+@import "utils/helpers";
+@import "utils/typography";
+
+// Import public pages SCSS files
+// ==============================
+@import "pages/public/components/header";
+@import "pages/public/components/lead";
+@import "pages/public/components/benefits";
+@import "pages/public/components/how-slider";
+@import "pages/public/components/different-slider";
+@import "pages/public/components/best-offers-slider";
+@import "pages/public/components/signin-form";
+@import "pages/public/components/footer";

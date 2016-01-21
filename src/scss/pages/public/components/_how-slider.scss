@@ -1,0 +1,123 @@
+.how-slider{
+  background-color: $main-blue;
+  padding-bottom: 100px;
+
+
+  .slider-tabs{
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 1px solid #fff;
+
+    > .tab{
+      height: 100%;
+      line-height: 40px;
+      font-family: "Circle-Bold", sans-serif;
+      font-size: 16px;
+      color: #fff;
+      display: block;
+      float: left;
+      width: 25%;
+      text-align: center;
+      position: relative;
+      text-decoration: none;
+      &:hover{
+        background-color: #fff;
+        color: $main-blue;
+        &:after{
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+      &:before, &:after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 0 20px 8px;
+        border-color: transparent transparent transparent #fff;
+        position: absolute;
+        right: -8px;
+        top: -1px;
+      }
+      &:after{
+        right: -7px;
+        border-color: transparent transparent transparent $main-blue;
+      }
+      &:last-child:before,&:last-child:after{
+        display: none;
+      }
+      &.-active{
+        color: $main-blue;
+        background-color: #fff;
+        &:after{
+          border-color: transparent transparent transparent #fff;
+        }
+      }
+    }
+  }
+
+  .slider-how{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 17px;
+    position: relative;
+
+
+    > .arrows{
+      position: absolute;
+      width: calc(100% + 120px);
+      left: -60px;
+      height: 30px;
+      top: calc(50% - 15px);
+    }
+
+    > .arrows > button.prev, > .arrows > button.next{
+      width: 19px;
+      height: 30px;
+      position: absolute;
+      border: none;
+      background: none;
+      padding: 0;
+      outline: none;
+    }
+    > .arrows > button.prev > svg, > .arrows > button.next > svg{
+      @include transition(stroke);
+      width: 19px;
+      height: 30px;
+      stroke: rgba(255,255,255,.3);
+      fill: rgba(0,0,0,0);
+      stroke-width:4;
+      &:hover{
+        stroke: rgba(255,255,255,1);
+      }
+    }
+    > .arrows > button.prev{
+      left: 0;
+    }
+    > .arrows > button.next{
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  .slides-list{
+
+    > .slide{
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: none;
+      &.-active{
+        display: block;
+      }
+    }
+    > .slide > img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

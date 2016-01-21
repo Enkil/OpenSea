@@ -1,0 +1,145 @@
+.form-signin{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/signin-form-background.png);
+  padding-bottom: 100px;
+
+  .slogan-text {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Circle-Light",sans-serif;
+    text-align: center;
+    p{
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  form.signin-form{
+    margin-top: 50px;
+    text-align: center;
+
+    > label.label{
+      width: 100%;
+
+      &.-password{
+        position: relative;
+        > span.eye{
+          position: absolute;
+          width: 18px;
+          height: 12px;
+          background-size: 18px 73px;
+          background-position: 0 25px;
+          background-image: url(../svg/eye_grey-sprite.svg);
+          cursor: pointer;
+          right: 15px;
+          top: calc(50% - 6px);
+          &:hover{  background-position: 0 13px;  }
+          &.-show{
+            background-position: 0 48px;
+            &:hover{  background-position: 0 37px;  }
+          }
+          &.-hide{
+            background-position: 0 -1px;
+            &:hover{  background-position: 0 -13px;  }
+          }
+        }
+      }
+      &.-select{
+        position: relative;
+        > svg{
+          position: absolute;
+          right: 15px;
+          top: calc(50% - 2px);
+          fill: transparent;
+          stroke: #000;
+          width: 18px;
+          height: 12px;
+          z-index: 10;
+        }
+      }
+    }
+    > label.label > input.input{
+      width: 100%;
+      box-sizing: border-box;
+      height: 52px;
+      line-height: 45px;
+      background-color: #fff;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid $grey-3;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      &::placeholder{
+        font-size: 20px;
+        line-height: 45px;
+        font-family: "Circle-Light", sans-serif;
+        color: $grey-3;
+      }
+    }
+    > label.label > select.select{
+      width: 100%;
+      box-sizing: border-box;
+      height: 52px;
+      line-height: 45px;
+      background-color: #eeeeee;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid $grey-3;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      appearance: none;
+      color: $black;
+      font-family: "Circle-Light", sans-serif;
+      font-size: 20px;
+      position: relative;
+
+      option{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: "Circle-Light", sans-serif;
+        font-size: 20px;
+        line-height: 45px;
+        color: $black;
+        width: 100%;
+      }
+    }
+    > button.submit{
+      @include transition(background-color);
+      color: #ffffff;
+      display: inline-block;
+      background-color: $green;
+      text-align: center;
+      font-family:'Circle-Regular',sans-serif;
+      font-size: 24px;
+      height: 60px;
+      line-height: 60px;
+      text-decoration: none;
+      box-sizing: border-box;
+      padding: 0 40px;
+      border-radius: 3px;
+      border: none;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      outline: none;
+      &:hover{
+        background-color: lighten($green, 5%);
+      }
+    }
+  }
+
+  .agreement-text{
+    font-family: "Circle-Regular",sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    color: $black;
+    text-align: center;
+    p{
+      margin: 0;
+    }
+    a{
+      text-decoration: none;
+      color: $main-blue;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.different-slider{
+  padding-bottom: 90px;
+
+  .slider-different{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    position: relative;
+
+
+    > .arrows{
+      position: absolute;
+      width: calc(100% + 120px);
+      left: -60px;
+      height: 30px;
+      top: calc(50% - 15px);
+    }
+
+    > .arrows > button.prev, > .arrows > button.next{
+      width: 19px;
+      height: 30px;
+      position: absolute;
+      border: none;
+      background: none;
+      padding: 0;
+      outline: none;
+    }
+    > .arrows > button.prev > svg, > .arrows > button.next > svg{
+      @include transition(stroke);
+      width: 19px;
+      height: 30px;
+      stroke: lighten($main-blue, 10%);
+      fill: rgba(0,0,0,0);
+      stroke-width:4;
+      &:hover{
+        stroke: $main-blue;
+      }
+    }
+    > .arrows > button.prev{
+      left: 0;
+    }
+    > .arrows > button.next{
+      right: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  .slides-list{
+
+    > .slide{
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: none;
+      justify-content: space-between;
+      &.-active{
+        display: flex;
+      }
+    }
+  }
+
+  .difference-item{
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    &.-second{
+      padding-top: 80px;
+    }
+
+    > .text{
+      text-align: center;
+      font-size: 24px;
+      line-height: 30px;
+      font-family: "Circle-Light", sans-serif;
+      strong{
+        font-family: "Circle-Bold", sans-serif;
+      }
+      p{
+        margin: 0;
+      }
+    }
+  }
+
+  .dots-list{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    > .dot{
+      @include transition(background-color);
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border: 1px solid $main-blue;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin: 0 14px;
+      cursor: pointer;
+      &:hover{
+        background-color: $main-blue;
+      }
+      &.-active{
+        background-color: $main-blue;
+      }
+    }
+  }
+}
