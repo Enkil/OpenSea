@@ -1,3 +1,3 @@
-# AstraMediaGroup Web Starter Kit
+# OpenSia HTML CSS kit
 
 ...
