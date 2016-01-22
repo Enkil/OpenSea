@@ -4086,7 +4086,7 @@ h2.landing-title.-white
 }
 .footer .copyright
 {
-    font-family: 'ProximaNova-Light';
+    font-family: 'ProximaNova-Light',sans-serif;
     font-size: 14px;
     font-weight: 300;
 
