@@ -12,6 +12,7 @@ section.how-slider{
     overflow: hidden;
     @include mq($from: xs, $until: md) {
       height: auto;
+      width: 100%;
     }
 
     > .tab{
@@ -70,6 +71,9 @@ section.how-slider{
     margin: 0 auto;
     margin-top: 17px;
     position: relative;
+    @include mq($from: xs, $until: md) {
+      width: 100%;
+    }
 
 
     > .arrows{

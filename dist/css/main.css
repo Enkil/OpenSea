@@ -3416,6 +3416,7 @@ section.how-slider .slider-tabs
 {
     section.how-slider .slider-tabs
     {
+        width: 100%; 
         height: auto;
     }
 }
@@ -3499,6 +3500,13 @@ section.how-slider .slider-how
     width: 80%;
     margin: 0 auto;
     margin-top: 17px;
+}
+@media (min-width: 0) and (max-width: 61.24em)
+{
+    section.how-slider .slider-how
+    {
+        width: 100%;
+    }
 }
 section.how-slider .slider-how > .arrows
 {
