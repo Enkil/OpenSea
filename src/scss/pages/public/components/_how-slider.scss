@@ -9,6 +9,10 @@
     box-sizing: border-box;
     margin: 0 auto;
     border: 1px solid #fff;
+    overflow: hidden;
+    @include mq($from: xs, $until: md) {
+      height: auto;
+    }
 
     > .tab{
       height: 100%;
@@ -22,6 +26,9 @@
       text-align: center;
       position: relative;
       text-decoration: none;
+      @include mq($from: xs, $until: md) {
+        width: 100%;
+      }
       &:hover{
         background-color: #fff;
         color: $main-blue;

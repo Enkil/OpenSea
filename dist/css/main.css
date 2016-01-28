@@ -3295,7 +3295,7 @@ h2.landing-title.-white
 }
 .benefit-item > .title
 {
-    font-family: 'Circle-Bold';
+    font-family: 'Circle-Bold',sans-serif;
     font-size: 24px;
     line-height: 24px;
 
@@ -3361,12 +3361,21 @@ h2.landing-title.-white
 }
 .how-slider .slider-tabs
 {
+    overflow: hidden; 
+
     box-sizing: border-box;
     width: 80%;
     height: 40px;
     margin: 0 auto;
 
     border: 1px solid #fff;
+}
+@media (min-width: 0) and (max-width: 61.24em)
+{
+    .how-slider .slider-tabs
+    {
+        height: auto;
+    }
 }
 .how-slider .slider-tabs > .tab
 {
@@ -3386,6 +3395,13 @@ h2.landing-title.-white
     text-decoration: none; 
 
     color: #fff;
+}
+@media (min-width: 0) and (max-width: 61.24em)
+{
+    .how-slider .slider-tabs > .tab
+    {
+        width: 100%;
+    }
 }
 .how-slider .slider-tabs > .tab:hover
 {

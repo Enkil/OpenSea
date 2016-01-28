@@ -12,7 +12,7 @@
 
   > .title{
     @include transition(color);
-    font-family:"Circle-Bold";
+    font-family: "Circle-Bold",sans-serif;
     font-size: 24px;
     line-height: 24px;
     margin-top: 0;
