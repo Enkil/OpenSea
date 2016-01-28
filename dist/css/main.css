@@ -3596,9 +3596,12 @@ h2.landing-title.-white
         -ms-transform: rotate(180deg);
             transform: rotate(180deg);
 }
-.different-slider .slides-list > .slide
+.different-slider .slides-list
 {
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex; 
 
     width: 100%;
     max-width: 100%;
@@ -3610,6 +3613,33 @@ h2.landing-title.-white
     -ms-flex-pack: justify;
             justify-content: space-between;
 }
+.different-slider .slides-list > .slide
+{
+    display: none;
+            flex-direction: column; 
+
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+@media (min-width: 0) and (max-width: 61.24em)
+{
+    .different-slider .slides-list > .slide
+    {
+        width: 100%;
+    }
+}
 .different-slider .slides-list > .slide.-active
 {
     display: -webkit-box;
@@ -3617,31 +3647,38 @@ h2.landing-title.-white
     display: -ms-flexbox;
     display:         flex;
 }
-.different-slider .difference-item
-{
-    box-sizing: border-box; 
-    width: 50%;
-    padding: 0 20px;
-}
-.different-slider .difference-item.-second
+.different-slider .slides-list > .slide.-second
 {
     padding-top: 80px;
 }
-.different-slider .difference-item > .text
+@media (min-width: 0) and (max-width: 61.24em)
 {
-    font-family: 'Circle-Light', sans-serif; 
+    .different-slider .slides-list > .slide.-second
+    {
+        display: none;
+    }
+}
+.different-slider .slides-list > .slide > h3.title
+{
+    font-family: 'Circle-Bold', sans-serif;
     font-size: 24px;
     line-height: 30px;
 
+    width: 100%; 
+    margin: 0;
+
     text-align: center;
 }
-.different-slider .difference-item > .text strong
+.different-slider .slides-list > .slide > p.text
 {
-    font-family: 'Circle-Bold', sans-serif;
-}
-.different-slider .difference-item > .text p
-{
+    font-family: 'Circle-Light', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+
+    width: 100%; 
     margin: 0;
+
+    text-align: center;
 }
 .different-slider .dots-list
 {
