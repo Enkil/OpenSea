@@ -1,41 +1,44 @@
-.logo-link{
+header.header{
 
-  > .logo{
-    width: 100%;
-    height: auto;
-  }
-}
+  .logo-link{
 
-.header-menu{
+    > .logo{
+      width: 100%;
+      height: auto;
+    }
+  }
 
-  > .list{
-    padding: 0;
-    list-style: none;
-    margin-right: 40px;
-  }
-  > .list > .item{
-    display: inline-block;
-    &:hover > .link{  color: $main-blue_hover;  }
-    &:hover > .link.-login{  background-color: $main-blue_hover;  }
-  }
-  > .list > .item > .link{
-    @include transition(color);
-    font-size: 16px;
-    color: $main-blue;
-    text-decoration: none;
-    padding: 0 20px;
-    height: 36px;
-    line-height: 36px;
-    font-family:'Circle-Regular', sans-serif;
-    &.-login{
-      @include transition(background-color);
+  nav.header-menu{
+
+    > .list{
+      padding: 0;
+      list-style: none;
+      margin-right: 40px;
+    }
+    > .list > .item{
       display: inline-block;
-      background-color: $main-blue;
+      &:hover > .link{  color: $main-blue_hover;  }
+      &:hover > .link.-login{  background-color: $main-blue_hover;  }
+    }
+    > .list > .item > .link{
+      @include transition(color);
+      font-size: 16px;
+      color: $main-blue;
+      text-decoration: none;
+      padding: 0 20px;
       height: 36px;
       line-height: 36px;
-      border-radius: 3px;
-      color: #fff;
-      text-align: center;
+      font-family:'Circle-Regular', sans-serif;
+      &.-login{
+        @include transition(background-color);
+        display: inline-block;
+        background-color: $main-blue;
+        height: 36px;
+        line-height: 36px;
+        border-radius: 3px;
+        color: #fff;
+        text-align: center;
+      }
     }
   }
 }
