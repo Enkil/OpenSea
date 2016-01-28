@@ -474,6 +474,96 @@ th
 
   Define the maximum width of `.container` for different screen sizes.
 */
+._xs-hidden-up
+{
+    display: none !important;
+}
+
+@media (max-width: 539px)
+{
+    ._xs-hidden-down
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 540px)
+{
+    ._sm-hidden-up
+    {
+        display: none !important;
+    }
+}
+
+@media (max-width: 979px)
+{
+    ._sm-hidden-down
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 980px)
+{
+    ._md-hidden-up
+    {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1023px)
+{
+    ._md-hidden-down
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px)
+{
+    ._lg-hidden-up
+    {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1279px)
+{
+    ._lg-hidden-down
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1280px)
+{
+    ._xl-hidden-up
+    {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1899px)
+{
+    ._xl-hidden-down
+    {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1900px)
+{
+    ._xxl-hidden-up
+    {
+        display: none !important;
+    }
+}
+
+._xxl-hidden-down
+{
+    display: none !important;
+}
+
 html
 {
     font-size: 16px;
