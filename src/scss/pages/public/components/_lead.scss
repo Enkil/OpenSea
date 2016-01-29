@@ -68,15 +68,19 @@ div.lead-block-wrapper{
       display: inline-block;
       background-color: $green;
       text-align: center;
-      font-family:'Circle-Light',sans-serif;
-      font-size: 20px;
-      height: 50px;
-      line-height: 50px;
+      font-family:'Circle-Regular',sans-serif;
+      font-size: 24px;
+      height: 60px;
+      line-height: 60px;
       text-decoration: none;
       box-sizing: border-box;
       padding: 0 40px;
       border-radius: 3px;
-      box-shadow: 0 2px 6px rgba(0,0,0,.3);
+      border: none;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      outline: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
       &:hover{
         background-color: lighten($green, 5%);
       }

@@ -3458,14 +3458,16 @@ div.lead-block-wrapper .lead-block > .slogan
 }
 div.lead-block-wrapper .lead-block > .btn
 {
-    font-family: 'Circle-Light',sans-serif;
-    font-size: 20px;
-    line-height: 50px;
+    font-family: 'Circle-Regular',sans-serif;
+    font-size: 24px;
+    line-height: 60px;
 
     display: inline-block;
 
     box-sizing: border-box;
-    height: 50px;
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     padding: 0 40px;
 
     -webkit-transition: background-color .325s ease;
@@ -3474,9 +3476,11 @@ div.lead-block-wrapper .lead-block > .btn
     text-decoration: none;
 
     color: #fff;
+    border: none;
     border-radius: 3px;
+    outline: none;
     background-color: #00b05e;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 div.lead-block-wrapper .lead-block > .btn:hover
 {
@@ -4369,8 +4373,9 @@ section.form-signin form.signin-form > button.submit
     color: #fff;
     border: none;
     border-radius: 3px;
-    outline: none; 
+    outline: none;
     background-color: #00b05e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
 }
 section.form-signin form.signin-form > button.submit:hover
 {
