@@ -59,6 +59,10 @@ header.header{
         border-radius: 3px;
         color: #fff;
         text-align: center;
+        margin-left: 20px;
+        @include mq($from: xs, $until: md) {
+          margin-left: 0;
+        }
       }
     }
   }

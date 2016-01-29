@@ -3251,14 +3251,22 @@ header.header nav.header-menu > .list > .item > .link.-login
     display: inline-block;
 
     height: 36px;
+    margin-left: 20px; 
 
     -webkit-transition: background-color .325s ease;
             transition: background-color .325s ease;
-    text-align: center; 
+    text-align: center;
 
     color: #fff;
     border-radius: 3px;
     background-color: #0086ff;
+}
+@media (min-width: 0) and (max-width: 61.24em)
+{
+    header.header nav.header-menu > .list > .item > .link.-login
+    {
+        margin-left: 0;
+    }
 }
 
 header.header .header-toggler
