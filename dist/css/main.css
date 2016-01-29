@@ -3593,7 +3593,7 @@ section.benefits .dots-list > .dot
     box-sizing: border-box;
     width: 13px;
     height: 13px;
-    margin: 0 14px;
+    margin: 0 10px;
 
     cursor: pointer; 
     -webkit-transition: background-color .325s ease;
@@ -3962,7 +3962,7 @@ section.different-slider .dots-list > .dot
     box-sizing: border-box;
     width: 13px;
     height: 13px;
-    margin: 0 14px;
+    margin: 0 10px;
 
     cursor: pointer; 
     -webkit-transition: background-color .325s ease;
