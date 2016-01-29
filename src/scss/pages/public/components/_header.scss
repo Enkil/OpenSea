@@ -17,6 +17,7 @@ header.header{
   nav.header-menu{
     @include mq($from: xs, $until: md) {
       width: 100%;
+      text-align: center;
     }
     &.-open{
       display: block;
@@ -26,7 +27,7 @@ header.header{
       padding: 0;
       list-style: none;
       margin-right: 40px;
-      @include mq($from: xs, $until: md) {
+      @include mq($from: xs, $until: sm) {
         line-height: 1.2;
         font-size: 32px;
         margin-right: 0;
@@ -34,7 +35,7 @@ header.header{
     }
     > .list > .item{
       display: inline-block;
-      @include mq($from: xs, $until: md) {
+      @include mq($from: xs, $until: sm) {
         width: 100%;
         text-align: center;
       }
