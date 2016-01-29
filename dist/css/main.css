@@ -4287,9 +4287,18 @@ section.form-signin form.signin-form > label.label > input.input
     padding-right: 20px;
     padding-left: 20px;
 
+    -webkit-transition: all .325s ease;
+            transition: all .325s ease;
+
     border: 1px solid #acacac;
-    border-radius: 3px; 
+    border-radius: 3px;
+    outline: none; 
     background-color: #fff;
+}
+section.form-signin form.signin-form > label.label > input.input:focus
+{
+    border: 1px solid #0086ff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
 }
 section.form-signin form.signin-form > label.label > input.input::-webkit-input-placeholder
 {
@@ -4329,7 +4338,7 @@ section.form-signin form.signin-form > label.label > select.select
     font-size: 20px;
     line-height: 45px;
 
-    position: relative; 
+    position: relative;
 
     box-sizing: border-box;
     width: 100%;
@@ -4338,14 +4347,23 @@ section.form-signin form.signin-form > label.label > select.select
     padding-right: 20px;
     padding-left: 20px;
 
+    -webkit-transition: all .325s ease;
+            transition: all .325s ease;
+
     color: #333;
     border: 1px solid #acacac;
     border-radius: 3px;
+    outline: none; 
     background-color: #eee;
 
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+}
+section.form-signin form.signin-form > label.label > select.select:focus
+{
+    border: 1px solid #0086ff;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
 }
 section.form-signin form.signin-form > label.label > select.select option
 {

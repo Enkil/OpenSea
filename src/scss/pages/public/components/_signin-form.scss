@@ -63,6 +63,7 @@ section.form-signin{
       }
     }
     > label.label > input.input{
+      @include transition();
       width: 100%;
       box-sizing: border-box;
       height: 52px;
@@ -72,6 +73,11 @@ section.form-signin{
       padding-right: 20px;
       border: 1px solid $grey-3;
       border-radius: 3px;
+      outline: none;
+      &:focus{
+        border: 1px solid $main-blue;
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+      }
 
       &::placeholder{
         font-size: 20px;
@@ -81,6 +87,7 @@ section.form-signin{
       }
     }
     > label.label > select.select{
+      @include transition();
       width: 100%;
       box-sizing: border-box;
       height: 52px;
@@ -96,6 +103,11 @@ section.form-signin{
       font-family: "Circle-Light", sans-serif;
       font-size: 20px;
       position: relative;
+      outline: none;
+      &:focus{
+        border: 1px solid $main-blue;
+        box-shadow: 0 0 6px rgba(0,0,0,.3);
+      }
 
       option{
         padding-left: 20px;
