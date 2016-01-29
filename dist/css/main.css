@@ -4209,6 +4209,8 @@ section.form-signin .slogan-text p
 }
 section.form-signin form.signin-form
 {
+    max-width: 450px; 
+    margin: 0 auto;
     margin-top: 50px;
 
     text-align: center;
