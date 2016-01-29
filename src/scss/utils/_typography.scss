@@ -1,0 +1,17 @@
+@include font-face('Circle-Regular', circle, regular, crc55);
+@include font-face('Circle-Bold', circle, bold, crc65);
+@include font-face('Circle-Light', circle, light, crc35);
+@include font-face('ProximaNova-Light', proxima-nova, light, proxima_nova_light-webfont);
+@include font-face('ProximaNova-Bold', proxima-nova, bold, proxima_nova_bold-webfont);
+
+
+h2.landing-title{
+  font-family:"Circle-Bold", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $main-blue;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  &.-white{  color: #ffffff;}
+}

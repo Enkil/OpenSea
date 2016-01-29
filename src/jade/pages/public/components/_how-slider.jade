@@ -1,0 +1,43 @@
+// How? slider
+section.how-slider
+    .container
+        .row
+            .column.-xs-12
+                h2.landing-title.-white How OpenSea finds me a cargo. Or ship
+        .row
+            .column.-xs-12
+                // Tabs
+                .slider-tabs
+                    a(href="javascript:void(0)" title="Add open position").tab.-active
+                        span Add open position
+                    a(href="javascript:void(0)" title="Select best match").tab
+                        span Select best match
+                    a(href="javascript:void(0)" title="Fix it").tab
+                        span Fix it
+                    a(href="javascript:void(0)" title="Get feedback").tab
+                        span Get feedback
+            .column.-xs-12
+                // Slider
+                .slider-how
+                    // Slider arrows
+                    .arrows._sm-hidden-down
+                        button.prev
+                            svg
+                                use(xlink:href="#arrow")
+                        button.next
+                            svg
+                                use(xlink:href="#arrow")
+                    // List of slides
+                    .slides-list
+                        // Slide
+                        .slide.-active
+                            img(src="../../img/pics/2хVessel_Add_open_position_white_background.png" alt="Add open position" title="Add open position")
+                        // Slide
+                        .slide
+                            img(src="../../img/pics/2хCargo_Select_best_match_white_background.png" alt="Select best match" title="Select best match")
+                        // Slide
+                        .slide
+                            img(src="../../img/pics/2хCargo_Fix_it_white_background.png" alt="Fix it" title="Fix it")
+                        // Slide
+                        .slide
+                            img(src="../../img/pics/2хVessel_Leave_feedback_white_background.png" alt="Get feedback" title="Get feedback")

@@ -1,0 +1,17 @@
+%sprite:before {
+    content: ' ';
+    background-image: url("../svg/sprite/svg-sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 1.25rem 1.9375rem;
+    display: inline-block;
+    .no-svg & {
+        background-image: url("../svg/sprite/svg-sprite.png");
+    }
+}
+
+.sprite__arrow_left:before {
+    @extend %sprite;
+    background-position: -0.0625rem -0.0625rem;
+    width: 1.125rem;
+    height: 1.8125rem;
+}
