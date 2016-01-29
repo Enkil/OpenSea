@@ -29,7 +29,7 @@ section.different-slider{
       @include transition(stroke);
       width: 19px;
       height: 30px;
-      stroke: lighten($main-blue, 10%);
+      stroke: lighten($main-blue, 30%);
       fill: rgba(0,0,0,0);
       stroke-width:4;
       &:hover{
