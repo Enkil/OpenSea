@@ -17,7 +17,7 @@ footer.footer{
 
   .footer-text{
     color: $grey-4;
-    font-family: "ProximaNova-Light";
+    font-family: "ProximaNova-Light", sans-serif;
     font-size: 14px;
     font-weight: 300;
     margin: 0;
@@ -30,7 +30,7 @@ footer.footer{
     }
 
     > a{
-      font-family: "ProximaNova-Bold";
+      font-family: "ProximaNova-Bold", sans-serif;
       color: $grey-4;
       text-decoration: none;
     }

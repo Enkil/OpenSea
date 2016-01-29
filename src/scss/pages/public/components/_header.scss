@@ -15,14 +15,29 @@ header.header{
   }
 
   nav.header-menu{
+    @include mq($from: xs, $until: md) {
+      width: 100%;
+    }
+    &.-open{
+      display: block;
+    }
 
     > .list{
       padding: 0;
       list-style: none;
       margin-right: 40px;
+      @include mq($from: xs, $until: md) {
+        line-height: 1.2;
+        font-size: 32px;
+        margin-right: 0;
+      }
     }
     > .list > .item{
       display: inline-block;
+      @include mq($from: xs, $until: md) {
+        width: 100%;
+        text-align: center;
+      }
       &:hover > .link{  color: $main-blue_hover;  }
       &:hover > .link.-login{  background-color: $main-blue_hover;  }
     }
