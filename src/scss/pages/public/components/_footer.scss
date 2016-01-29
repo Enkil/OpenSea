@@ -22,11 +22,13 @@ footer.footer{
     font-weight: 300;
     margin: 0;
     display: inline-block;
+    width: 100%;
+    text-align: center;
 
     @include mq($from: xs, $until: md) {
       text-align: center;
       line-height: 20px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     > a{

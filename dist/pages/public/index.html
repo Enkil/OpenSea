@@ -103,7 +103,7 @@
         </div>
       </div>
       <!-- Benefits block-->
-      <section class="benefits">
+      <section ng-init="benefit = {}; benefit.tab = false; benefit.image = false; benefit.dot = false" class="benefits">
         <div class="container">
           <div class="row">
             <div class="column -xs-12">
@@ -113,7 +113,7 @@
           <div class="row">
             <div class="column -xs-12 -lg-4">
               <article class="benefit-item -active">
-                <h3 class="title">Instantly find matching positions</h3>
+                <h3 ng-click="navigation.toggler = !navigation.toggler; navigation.menu = !navigation.menu" ng-class="{'-active': navigation.toggler === true}" class="title">Instantly find matching positions</h3>
                 <div class="text">
                   <p>
                     As soon as you've placed a position, <br/>
@@ -505,7 +505,7 @@
                   <input type="text" placeholder="Full Name" id="name" class="input">
                 </label>
                 <label for="email" class="label">
-                  <input type="email" placeholder="Bisiness Email" id="email" class="input">
+                  <input type="email" placeholder="Business Email" id="email" class="input">
                 </label>
                 <label for="password" class="label -password"><span class="eye"></span>
                   <input type="password" placeholder="Create Password" id="password" class="input">
@@ -516,11 +516,8 @@
                   </svg>
                   <select id="select" class="select">
                     <option value="I'm Shipowner">I'm Shipowner</option>
-                    <option value="I'm Shipowner">I'm Shipowner</option>
-                    <option value="I'm Shipowner">I'm Shipowner</option>
-                    <option value="I'm Shipowner">I'm Shipowner</option>
-                    <option value="I'm Shipowner">I'm Shipowner</option>
-                    <option value="I'm Shipowner">I'm Shipowner</option>
+                    <option value="I'm Shipowner">I'm Charterer</option>
+                    <option value="I'm Shipowner">I'm Broker</option>
                   </select>
                 </label>
                 <button class="submit">Create my account</button>
@@ -541,11 +538,11 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="column -xs-12 -md-6">
-            <p class="footer-text">If you have any questions or suggestions, feel free to email us at <a href="mailto:contact@opensea.pro" title="Mail to OpenSea">contact@opensea.pro</a></p>
-          </div>
           <div class="column -xs-12 -md-3">
             <div class="slogan-img"><img src="../../svg/because_we_care.svg" alt="Because we care" title="Because we care" class="slogan-img"></div>
+          </div>
+          <div class="column -xs-12 -md-6">
+            <p class="footer-text">If you have any questions or suggestions, feel free to email us at <a href="mailto:contact@opensea.pro" title="Mail to OpenSea">contact@opensea.pro</a></p>
           </div>
           <div class="column -xs-12 -md-3">
             <p class="copyright">© 2014 OPENSEA.PRO</p>

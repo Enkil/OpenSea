@@ -1,6 +1,6 @@
 
 <!-- Benefits block-->
-<section class="benefits">
+<section ng-init="benefit = {}; benefit.tab = false; benefit.image = false; benefit.dot = false" class="benefits">
   <div class="container">
     <div class="row">
       <div class="column -xs-12">
@@ -10,7 +10,7 @@
     <div class="row">
       <div class="column -xs-12 -lg-4">
         <article class="benefit-item -active">
-          <h3 class="title">Instantly find matching positions</h3>
+          <h3 ng-click="navigation.toggler = !navigation.toggler; navigation.menu = !navigation.menu" ng-class="{'-active': navigation.toggler === true}" class="title">Instantly find matching positions</h3>
           <div class="text">
             <p>
               As soon as you've placed a position, <br/>

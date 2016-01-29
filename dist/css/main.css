@@ -4444,9 +4444,12 @@ footer.footer .footer-text
     font-size: 14px;
     font-weight: 300;
 
-    display: inline-block; 
+    display: inline-block;
 
+    width: 100%;
     margin: 0;
+
+    text-align: center; 
 
     color: #808080;
 }
@@ -4456,7 +4459,7 @@ footer.footer .footer-text
     {
         line-height: 20px;
 
-        margin-bottom: 5px; 
+        margin-bottom: 10px; 
 
         text-align: center;
     }

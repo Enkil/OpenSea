@@ -1,5 +1,5 @@
 // Benefits block
-section.benefits
+section(ng-init="benefit = {}; benefit.tab = false; benefit.image = false; benefit.dot = false").benefits
     .container
         .row
             .column.-xs-12
@@ -7,7 +7,8 @@ section.benefits
         .row
             .column.-xs-12.-lg-4
                 article.benefit-item.-active
-                    h3.title Instantly find matching positions
+                    h3(ng-click="navigation.toggler = !navigation.toggler; navigation.menu = !navigation.menu"
+                        ng-class="{'-active': navigation.toggler === true}").title Instantly find matching positions
                     .text
                         p.
                             As soon as you've placed a position, <br/>
