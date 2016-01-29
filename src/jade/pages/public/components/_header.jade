@@ -1,14 +1,16 @@
 // Header
-header.header.container
+header(ng-init="navigation = {}; navigation.toggler = false; navigation.menu = false").header.container
     .row.-xs-center
         .column.-xs-10.-md-3
             a(href="index.html" title="OpenSia").logo-link
                 img(src="../../svg/header-logo.svg" alt="OpenSia" title="OpenSia").logo
         .column.-xs-2._md-hidden-up
-            a(href='javascript:void(0)').header-toggler._md-hidden-up.-active
+            a(href='javascript:void(0)'
+                ng-click="navigation.toggler = !navigation.toggler; navigation.menu = !navigation.menu"
+                ng-class="{'-active': navigation.toggler === true}").header-toggler._md-hidden-up
                 span
         .column.-xs-12.-md-9
-            nav.header-menu._pull-right._sm-hidden-down.-open
+            nav(ng-class="{'-open': navigation.menu === true}").header-menu._pull-right._sm-hidden-down
                 ul.list
                     li.item
                         a(href="javascript:void(0)" title="OpenSia Benefits").link Benefits

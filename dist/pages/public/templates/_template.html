@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<html lang="en" prefix="og: http://ogp.me/ns#" ng-app="opensea">
   <head>
     <title>OpenSea.pro • Manage your ships & cargoes online</title>
     <!-- Main Meta information-->
@@ -73,12 +73,12 @@
   </head>
   <body>
     <!-- Header-->
-    <header class="header container">
+    <header ng-init="navigation = {}; navigation.toggler = false; navigation.menu = false" class="header container">
       <div class="row -xs-center">
         <div class="column -xs-10 -md-3"><a href="index.html" title="OpenSia" class="logo-link"><img src="../../svg/header-logo.svg" alt="OpenSia" title="OpenSia" class="logo"></a></div>
-        <div class="column -xs-2 _md-hidden-up"><a href="javascript:void(0)" class="header-toggler _md-hidden-up -active"><span></span></a></div>
+        <div class="column -xs-2 _md-hidden-up"><a href="javascript:void(0)" ng-click="navigation.toggler = !navigation.toggler; navigation.menu = !navigation.menu" ng-class="{'-active': navigation.toggler === true}" class="header-toggler _md-hidden-up"><span></span></a></div>
         <div class="column -xs-12 -md-9">
-          <nav class="header-menu _pull-right _sm-hidden-down -open">
+          <nav ng-class="{'-open': navigation.menu === true}" class="header-menu _pull-right _sm-hidden-down">
             <ul class="list">
               <li class="item"><a href="javascript:void(0)" title="OpenSia Benefits" class="link">Benefits</a></li>
               <li class="item"><a href="javascript:void(0)" title="OpenSia Pricing" class="link">Pricing</a></li>
@@ -109,6 +109,7 @@
     </footer>
     <div class="scripts">
       <script src="../../js/vendor/vendor-bundle.js"></script>
+      <script src="../../js/custom/custom-bundle.js"></script>
     </div>
   </body>
 </html>

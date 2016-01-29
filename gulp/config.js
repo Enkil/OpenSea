@@ -11,7 +11,7 @@ module.exports = {
                 JS: 'src/js/**/*.*',
                 JSVendor: 'vendor/**/*.*',
                 BowerJSVendor: 'src/js/vendor/',
-                JSCustom: ['custom/**/*.js', 'main.js', '!custom/toHead/**/*.js'],
+                JSCustom: ['custom/**/*.js', '!custom/toHead/**/*.js'],
                 CSSVendor: 'src/scss/vendor/',
                 Txt: ['src/humans.txt', 'src/robots.txt', 'src/.htaccess','src/CHANGELOG.md','src/README.md'],
                 Fonts: 'src/scss/fonts/**/*',
