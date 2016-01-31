@@ -3673,6 +3673,22 @@ section.how-slider .slider-tabs > .tab
     {
         width: 100%;
     }
+    section.how-slider .slider-tabs > .tab:nth-child(1)
+    {
+        background-color: #0086ff;
+    }
+    section.how-slider .slider-tabs > .tab:nth-child(2)
+    {
+        background-color: #007ef0;
+    }
+    section.how-slider .slider-tabs > .tab:nth-child(3)
+    {
+        background-color: #0076e0;
+    }
+    section.how-slider .slider-tabs > .tab:nth-child(4)
+    {
+        background-color: #006ed1;
+    }
 }
 section.how-slider .slider-tabs > .tab:hover
 {

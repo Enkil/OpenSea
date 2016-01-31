@@ -30,6 +30,13 @@ section.how-slider{
       text-decoration: none;
       @include mq($from: xs, $until: md) {
         width: 100%;
+
+        @for $i from 0 to 4 {
+          &:nth-child(#{$i+1}){
+            background-color: darken($main-blue, $i*3);
+          }
+        }
+
       }
       &:hover{
         background-color: #fff;
