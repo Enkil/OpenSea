@@ -2,6 +2,17 @@ section.how-slider{
   background-color: $main-blue;
   padding-bottom: 100px;
 
+  a.cargo-ship{
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: Circle-Bold,sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 4px solid #fff;
+  }
 
   .slider-tabs{
     width: 80%;

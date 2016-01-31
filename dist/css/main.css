@@ -3634,6 +3634,21 @@ section.how-slider
 
     background-color: #0086ff;
 }
+section.how-slider a.cargo-ship
+{
+    font-family: Circle-Bold,sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+
+    margin-top: 80px;
+    margin-bottom: 60px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border-bottom: 4px solid #fff;
+}
 section.how-slider .slider-tabs
 {
     overflow: hidden;
