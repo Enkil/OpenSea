@@ -3175,6 +3175,13 @@ header.header .logo-link > .logo
     width: 100%;
     height: auto;
 }
+@media (min-width: 80em)
+{
+    header.header .logo-link > .logo
+    {
+        max-width: 220px;
+    }
+}
 
 @media (min-width: 0) and (max-width: 49.99em)
 {

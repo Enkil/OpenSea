@@ -11,6 +11,9 @@ header.header{
     > .logo{
       width: 100%;
       height: auto;
+      @include mq($from: xl) {
+        max-width: 220px;
+      }
     }
   }
 
