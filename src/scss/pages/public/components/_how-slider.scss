@@ -10,6 +10,7 @@ section.how-slider{
     margin: 0 auto;
     border: 1px solid #fff;
     overflow: hidden;
+    counter-reset: list;
     @include mq($from: xs, $until: md) {
       height: auto;
       width: 100%;
@@ -61,6 +62,15 @@ section.how-slider{
         background-color: #fff;
         &:after{
           border-color: transparent transparent transparent #fff;
+        }
+      }
+      > span:before{
+        counter-increment: list;
+        content: counter(list);
+        display: none;
+        margin-right: 10px;
+        @include mq($from: xs, $until: md) {
+          display: inline-block;
         }
       }
     }
