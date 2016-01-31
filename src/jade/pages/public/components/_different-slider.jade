@@ -47,9 +47,6 @@ section.different-slider
                     ul.dots-list
                         li.dot.-active
                             a(href="javascript:void(0)" title="")
-                        li.dot
-                            a(href="javascript:void(0)" title="")
-                        li.dot
-                            a(href="javascript:void(0)" title="")
-                        li.dot
-                            a(href="javascript:void(0)" title="")
+                        - for (var i = 0; i < 10; ++i)
+                            li.dot
+                                a(href="javascript:void(0)" title="")
