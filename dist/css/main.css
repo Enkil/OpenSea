@@ -4134,12 +4134,12 @@ section.best-offers .best-offer > .offer-data td
 {
     font-family: 'Circle-Light', sans-serif; 
     font-size: 15px;
-    line-height: 30px;
+    line-height: 25px;
 }
 section.best-offers .best-offer > .offer-data td:first-child
 {
-    width: 50%;
-    padding-right: 30px;
+    width: 40%;
+    padding-right: 15px;
 
     vertical-align: top;
 }
