@@ -3672,6 +3672,9 @@ section.how-slider .slider-tabs > .tab
     section.how-slider .slider-tabs > .tab
     {
         width: 100%;
+        padding-left: 50px; 
+
+        text-align: left;
     }
     section.how-slider .slider-tabs > .tab:nth-child(1)
     {

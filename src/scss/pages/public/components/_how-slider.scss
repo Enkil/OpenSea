@@ -30,6 +30,8 @@ section.how-slider{
       text-decoration: none;
       @include mq($from: xs, $until: md) {
         width: 100%;
+        text-align: left;
+        padding-left: 50px;
 
         @for $i from 0 to 4 {
           &:nth-child(#{$i+1}){
