@@ -4134,7 +4134,7 @@ section.best-offers .best-offer > .offer-data td
 {
     font-family: 'Circle-Light', sans-serif; 
     font-size: 15px;
-    line-height: 25px;
+    line-height: 30px;
 }
 section.best-offers .best-offer > .offer-data td:first-child
 {
@@ -4146,8 +4146,6 @@ section.best-offers .best-offer > .offer-data td:first-child
 section.best-offers .best-offer > .offer-data td:last-child
 {
     font-family: 'Circle-Regular', sans-serif;
-
-    text-transform: uppercase;
 }
 section.best-offers .offers-range
 {

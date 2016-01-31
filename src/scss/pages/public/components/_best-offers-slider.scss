@@ -60,7 +60,7 @@ section.best-offers{
       }
       td{
         font-size: 15px;
-        line-height: 25px;
+        line-height: 30px;
         font-family: "Circle-Light", sans-serif;
         &:first-child{
           width: 40%;
@@ -70,7 +70,7 @@ section.best-offers{
         &:last-child{
           //width: 60%;
           font-family: "Circle-Regular", sans-serif;
-          text-transform: uppercase;
+          //text-transform: uppercase;
         }
       }
 
