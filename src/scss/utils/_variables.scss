@@ -10,12 +10,32 @@ $screen-lg:                   992px; // Large screen / desktop
 $screen-xl:                   1280px; // Extra large screen / wide desktop
 $screen-xxl:                  1890px; // Super large screen / extra wide desktop
 
+$grid-breakpoints: (
+        xs:                   0,
+        sm:                   540px,
+        md:                   800px,
+        lg:                   1024px,
+        xl:                   1280px,
+        xxl:                  1900px
+) !default;
+
+
 $container-max-widths: (
-        sm: 480px,
-        md: 768px,
-        lg: 992px,
-        xl: 1280px,
-        xxl: 1890px
+        sm:                   480px,
+        md:                   768px,
+        lg:                   992px,
+        xl:                   1280px,
+        xxl:                  1890px
+) !default;
+
+// Sass MQ variables
+$mq-breakpoints: (
+        xs:                   0px,
+        sm:                   540px,
+        md:                   800px,
+        lg:                   1024px,
+        xl:                   1280px,
+        xxl:                  1900px
 ) !default;
 
 // Colors

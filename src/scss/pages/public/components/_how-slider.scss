@@ -1,7 +1,18 @@
-.how-slider{
+section.how-slider{
   background-color: $main-blue;
   padding-bottom: 100px;
 
+  a.cargo-ship{
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: Circle-Bold,sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 4px solid #fff;
+  }
 
   .slider-tabs{
     width: 80%;
@@ -9,6 +20,12 @@
     box-sizing: border-box;
     margin: 0 auto;
     border: 1px solid #fff;
+    overflow: hidden;
+    counter-reset: list;
+    @include mq($from: xs, $until: md) {
+      height: auto;
+      width: 100%;
+    }
 
     > .tab{
       height: 100%;
@@ -22,6 +39,18 @@
       text-align: center;
       position: relative;
       text-decoration: none;
+      @include mq($from: xs, $until: md) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+
+        @for $i from 0 to 4 {
+          &:nth-child(#{$i+1}){
+            background-color: darken($main-blue, $i*3);
+          }
+        }
+
+      }
       &:hover{
         background-color: #fff;
         color: $main-blue;
@@ -55,6 +84,15 @@
           border-color: transparent transparent transparent #fff;
         }
       }
+      > span:before{
+        counter-increment: list;
+        content: counter(list);
+        display: none;
+        margin-right: 10px;
+        @include mq($from: xs, $until: md) {
+          display: inline-block;
+        }
+      }
     }
   }
 
@@ -63,6 +101,9 @@
     margin: 0 auto;
     margin-top: 17px;
     position: relative;
+    @include mq($from: xs, $until: md) {
+      width: 100%;
+    }
 
 
     > .arrows{

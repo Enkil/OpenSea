@@ -1,4 +1,4 @@
-.different-slider{
+section.different-slider{
   padding-bottom: 90px;
 
   .slider-different{
@@ -29,7 +29,7 @@
       @include transition(stroke);
       width: 19px;
       height: 30px;
-      stroke: lighten($main-blue, 10%);
+      stroke: lighten($main-blue, 30%);
       fill: rgba(0,0,0,0);
       stroke-width:4;
       &:hover{
@@ -46,38 +46,49 @@
   }
 
   .slides-list{
-
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
     > .slide{
-      width: 100%;
+      width: 50%;
       max-width: 100%;
       height: auto;
       margin: 0 auto;
       display: none;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 20px;
+      box-sizing: border-box;
+      flex-direction: column;
+      @include mq($from: xs, $until: md) {
+        width: 100%;
+      }
       &.-active{
         display: flex;
       }
-    }
-  }
-
-  .difference-item{
-    width: 50%;
-    padding: 0 20px;
-    box-sizing: border-box;
-    &.-second{
-      padding-top: 80px;
-    }
-
-    > .text{
-      text-align: center;
-      font-size: 24px;
-      line-height: 30px;
-      font-family: "Circle-Light", sans-serif;
-      strong{
-        font-family: "Circle-Bold", sans-serif;
+      &.-second{
+        padding-top: 80px;
+        @include mq($from: xs, $until: md) {
+          display: none;
+        }
       }
-      p{
+      > h3.title{
+        font-family: "Circle-Bold", sans-serif;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
         margin: 0;
+        width: 100%;
+      }
+      > p.text{
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+        font-family: "Circle-Light", sans-serif;
+        margin: 0;
+        width: 100%;
       }
     }
   }
@@ -97,7 +108,7 @@
       border: 1px solid $main-blue;
       box-sizing: border-box;
       border-radius: 50%;
-      margin: 0 14px;
+      margin: 0 10px;
       cursor: pointer;
       &:hover{
         background-color: $main-blue;

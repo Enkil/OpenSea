@@ -2,7 +2,7 @@
 section.form-signin
     .container.-fluid
         .row._justify-center
-            .column.-xs-4
+            .column.-xs-12.-sm-6
                 h2.landing-title Try it now
                 .slogan-text
                     p It's easy and will cost you nothing
@@ -10,7 +10,7 @@ section.form-signin
                     label(for="name").label
                         input(type="text" placeholder="Full Name").input#name
                     label(for="email").label
-                        input(type="email" placeholder="Bisiness Email").input#email
+                        input(type="email" placeholder="Business Email").input#email
                     label(for="password").label.-password
                         span.eye
                         input(type="password" placeholder="Create Password").input#password
@@ -19,14 +19,11 @@ section.form-signin
                             use(xlink:href="#form-select-arrow")
                         select.select#select
                           option(value="I'm Shipowner") I'm Shipowner
-                          option(value="I'm Shipowner") I'm Shipowner
-                          option(value="I'm Shipowner") I'm Shipowner
-                          option(value="I'm Shipowner") I'm Shipowner
-                          option(value="I'm Shipowner") I'm Shipowner
-                          option(value="I'm Shipowner") I'm Shipowner
+                          option(value="I'm Shipowner") I'm Charterer
+                          option(value="I'm Shipowner") I'm Broker
                     button.submit Create my account
                 .agreement-text
                     p.
                         By clicking “Create account” you agree to our<br/>
-                        <a href="javascript:void(0) title="Terms & Conditions">Terms & Conditions</a>
-                        and <a href="javascript:void(0) title="Privacy Policy">Privacy Policy</a>
+                        <a href="javascript:void(0)" title="Terms & Conditions">Terms & Conditions</a>
+                        and <a href="javascript:void(0)" title="Privacy Policy">Privacy Policy</a>

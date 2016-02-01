@@ -1,4 +1,4 @@
-.best-offers{
+section.best-offers{
   background-color: $grey;
   padding-bottom: 95px;
 
@@ -63,14 +63,14 @@
         line-height: 30px;
         font-family: "Circle-Light", sans-serif;
         &:first-child{
-          width: 50%;
-          padding-right: 30px;
+          width: 40%;
+          padding-right: 15px;
           vertical-align: top;
         }
         &:last-child{
           //width: 60%;
           font-family: "Circle-Regular", sans-serif;
-          text-transform: uppercase;
+          //text-transform: uppercase;
         }
       }
 

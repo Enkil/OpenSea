@@ -1,5 +1,5 @@
 doctype
-html(lang='en', prefix='og: http://ogp.me/ns#')
+html(lang='en', prefix='og: http://ogp.me/ns#' ng-app="opensea")
 
     include ../components/_head
 
@@ -9,3 +9,7 @@ html(lang='en', prefix='og: http://ogp.me/ns#')
         block content
 
         include ../components/_footer
+
+        .scripts
+            script(src="../../js/vendor/vendor-bundle.js")
+            script(src="../../js/custom/custom-bundle.js")

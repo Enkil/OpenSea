@@ -4,6 +4,7 @@ module.exports = {
             Src: {
                 Styles: 'src/scss/**/*.scss',
                 MainStyleFile: 'src/scss/main.scss',
+                PurifyCssHtml: 'dist/pages/**/*.html',
                 Jade: 'src/jade/**/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
@@ -11,7 +12,7 @@ module.exports = {
                 JS: 'src/js/**/*.*',
                 JSVendor: 'vendor/**/*.*',
                 BowerJSVendor: 'src/js/vendor/',
-                JSCustom: ['custom/**/*.js', 'main.js', '!custom/toHead/**/*.js'],
+                JSCustom: ['custom/**/*.js', '!custom/toHead/**/*.js'],
                 CSSVendor: 'src/scss/vendor/',
                 Txt: ['src/humans.txt', 'src/robots.txt', 'src/.htaccess','src/CHANGELOG.md','src/README.md'],
                 Fonts: 'src/scss/fonts/**/*',
@@ -21,6 +22,7 @@ module.exports = {
             },
             Build: {
                 Styles: 'dist/css',
+                MainStyleFile: 'main.css',
                 Html: 'dist/',
                 Images: 'dist/img',
                 PngSprite: 'dist/img/sprite',
@@ -39,7 +41,7 @@ module.exports = {
 
     // GitHub Pages options
     ghpOptions: {
-        //remoteUrl: "git@github.com:Enkil/amg-webstarter-kit.git"
+        remoteUrl: "https://github.com/Enkil/OpenSea.git"
     },
 
     // jsDoc3 options for JS documentation generating
