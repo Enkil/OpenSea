@@ -5,6 +5,8 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     cssshrink = require('gulp-cssshrink'),
     csscomb = require('gulp-csscomb'),
+    concat = require('gulp-concat'),
+    purify = require('gulp-purifycss'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
     newer = require('gulp-newer'),
@@ -24,9 +26,14 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer(config.autoprefixerBrowsers))
-        //.pipe(cssshrink())
         .pipe(csscomb())
+        .pipe(concat(config.pathTo.Build.MainStyleFile))
         .pipe(gulp.dest(config.pathTo.Build.Styles))
+
+        .pipe(rename({ suffix: '.purify' }))
+        .pipe(purify([ config.pathTo.Src.PurifyCssHtml]))
+        .pipe(gulp.dest(config.pathTo.Build.Styles))
+
         .pipe(rename({ suffix: '.min' }))
         .pipe(minifycss())
         .pipe(sourcemaps.write('.'))

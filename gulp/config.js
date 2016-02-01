@@ -4,6 +4,7 @@ module.exports = {
             Src: {
                 Styles: 'src/scss/**/*.scss',
                 MainStyleFile: 'src/scss/main.scss',
+                PurifyCssHtml: 'dist/pages/**/*.html',
                 Jade: 'src/jade/**/*.jade',
                 Images: ['src/img/**/*.*', '!src/img/sprite/*.*'],
                 PngSprite: 'src/img/sprite/**/*.png',
@@ -21,6 +22,7 @@ module.exports = {
             },
             Build: {
                 Styles: 'dist/css',
+                MainStyleFile: 'main.css',
                 Html: 'dist/',
                 Images: 'dist/img',
                 PngSprite: 'dist/img/sprite',
