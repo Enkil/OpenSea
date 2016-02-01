@@ -135,7 +135,7 @@ div.lead-block-wrapper{
     }
     &:hover{
       > span.arrow > svg{
-        stroke: lighten($main-blue, 10%);
+        stroke: $main-blue_hover;
       }
     }
   }
