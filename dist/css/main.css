@@ -3503,6 +3503,101 @@ div.lead-block-wrapper .lead-block > .btn:hover
 {
     background-color: #00ca6c;
 }
+div.lead-block-wrapper > a.animate-arrows
+{
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 20px); 
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    width: 40px;
+    height: 40px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+
+@-webkit-keyframes arrow-movement
+{
+    0%
+    {
+        top: 25%; 
+
+        opacity: 0;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes arrow-movement
+{
+    0%
+    {
+        top: 25%; 
+
+        opacity: 0;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+div.lead-block-wrapper > a.animate-arrows > span.arrow
+{
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); 
+
+    opacity: 0;
+}
+div.lead-block-wrapper > a.animate-arrows > span.arrow.-one
+{
+    -webkit-animation: arrow-movement 2s ease-in-out infinite;
+            animation: arrow-movement 2s ease-in-out infinite;
+}
+div.lead-block-wrapper > a.animate-arrows > span.arrow.-two
+{
+    -webkit-animation: arrow-movement 2s 1s ease-in-out infinite;
+            animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+div.lead-block-wrapper > a.animate-arrows > span.arrow > svg
+{
+    width: 40px;
+    height: 40px;
+
+    -webkit-transition: stroke .325s ease;
+            transition: stroke .325s ease;
+
+    stroke: #66b6ff;
+    fill: transparent;
+    stroke-width: 4;
+}
+div.lead-block-wrapper > a.animate-arrows:hover > span.arrow > svg
+{
+    stroke: #339eff;
+}
 
 section.benefits
 {
