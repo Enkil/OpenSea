@@ -1,0 +1,12 @@
+table.button.op-button{
+  border-radius: $global-radius!important;
+  box-shadow: 0 5px 10px $shadow;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+  table.button.op-button a{
+    font-size: $global-font-size!important;
+  }
+}

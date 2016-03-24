@@ -1,0 +1,15 @@
+.op-icon-security{
+  padding-right: 7px;
+}
+
+
+@media only screen and (max-width: #{$global-breakpoint}) {
+
+  table.body .op-security-icons .columns, table.body .op-security-icons .column{
+    padding-right: 0 !important;
+  }
+
+  table.body .op-security-icons .op-security-icon{
+    padding-right: 10px !important;
+  }
+}

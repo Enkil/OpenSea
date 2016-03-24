@@ -1,0 +1,13 @@
+.op-header{
+  background-color: $primary-color;
+  padding-top: 12px;
+  padding-bottom: 2px;
+  border-top-left-radius: $global-radius;
+  border-top-right-radius: $global-radius;
+  margin-bottom: 25px;
+
+  a.op-logo-link{
+    margin-top: 16px;
+    display: inline-block;
+  }
+}
