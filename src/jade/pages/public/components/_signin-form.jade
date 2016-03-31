@@ -1,0 +1,29 @@
+// SignIn form
+section.form-signin
+    .container.-fluid
+        .row._justify-center
+            .column.-xs-12.-sm-6
+                h2.landing-title.-smaller-margin Try it now
+                .slogan-text
+                    p It's easy and will cost you nothing
+                form.signin-form
+                    label(for="name").label
+                        input(type="text" placeholder="Full Name").input#name
+                    label(for="email").label
+                        input(type="email" placeholder="Business Email").input#email
+                    label(for="password").label.-password
+                        span.eye
+                        input(type="password" placeholder="Create Password").input#password
+                    label(for="select").label.-select
+                        svg
+                            use(xlink:href="#form-select-arrow")
+                        select.select#select
+                          option(value="I'm Shipowner") I'm Shipowner
+                          option(value="I'm Shipowner") I'm Charterer
+                          option(value="I'm Shipowner") I'm Broker
+                    button.submit Create my account
+                .agreement-text
+                    p.
+                        By clicking “Create account” you agree to our<br/>
+                        <a href="javascript:void(0)" title="Terms & Conditions">Terms & Conditions</a>
+                        and <a href="javascript:void(0)" title="Privacy Policy">Privacy Policy</a>

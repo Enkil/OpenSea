@@ -1,0 +1,18 @@
+.notifications-form{
+  font-size: 0;
+
+  span.dash{
+    display: inline-block;
+    width: 12px;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+    color: $black;
+    margin-right: 10px;
+  }
+}
+
+.security-form{
+  padding-bottom: 25px;
+  //margin-bottom: 25px;
+  border-bottom: 1px solid $grey-5;
+}

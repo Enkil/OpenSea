@@ -1,0 +1,22 @@
+// Header
+header(data-ng-init="headerNav = {}; headerNav.toggler = false; headerNav.menu = false;").header.container
+    .row.-xs-center
+        .column.-xs-10.-md-3
+            a(href="index.html" title="OpenSea").logo-link
+                img(src="../../svg/logo-opensea.svg" alt="OpenSea" title="OpenSea").logo
+        .column.-xs-2._md-hidden-up
+            a(href='javascript:void(0)'
+                data-ng-click="headerNav.toggler = !headerNav.toggler; headerNav.menu = !headerNav.menu"
+                data-ng-class="{'-active': headerNav.toggler === true}").header-toggler._md-hidden-up
+                span
+        .column.-xs-12.-md-9
+            nav(data-ng-class="{'-open': headerNav.menu === true}").header-menu._pull-right._sm-hidden-down
+                ul.list
+                    li.item
+                        a(href="#benefits" title="OpenSea Benefits").link Benefits
+                    li.item
+                        a(href="javascript:void(0)" title="OpenSea Pricing").link Pricing
+                    li.item
+                        a(href="javascript:void(0)" title="OpenSea Blog").link Blog
+                    li.item
+                        a(href="javascript:void(0)" title="Log in").link.-login Log in

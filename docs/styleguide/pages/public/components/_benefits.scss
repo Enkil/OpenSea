@@ -1,0 +1,105 @@
+section.benefits{
+  padding-bottom: 80px;
+
+  .benefit-item{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    @include mq($from: xs, $until: lg) {
+      display: none;
+    }
+    &:last-child{  border-bottom: none;  }
+
+    > .title{
+      @include transition(color);
+      font-family: "Circle-Bold",sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: $main-blue;;
+      cursor: pointer;
+      &:hover{  color: $main-blue_hover;  }
+    }
+    > .text{
+      font-family:"Circle-Light",sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      color: $black;
+      display: none;
+    }
+
+    &.-active {
+      @include mq($from: xs, $until: lg) {
+        display: block;
+      }
+      > .title {
+        color: $black;
+      }
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 4px;
+        height: calc(100% - 20px);
+        border-radius: 2px;
+        background-color: $main-blue;
+        position: absolute;
+        left: 0;
+      }
+      > .text{
+        display: block;
+      }
+    }
+    &:last-child.-active:before{
+      height: 100%;
+    }
+  }
+
+  .benefit-image{
+    position: relative;
+
+    > .image{
+      @include transition(all, 0.325s, linear, 0.325s);
+      width: 97%;
+      opacity: 1;
+      height: auto;
+      object-fit: contain;
+      &.ng-hide{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+  }
+
+  .dots-list{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    > .dot{
+      @include transition(background-color);
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      border: 1px solid $main-blue;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin: 0 10px;
+      cursor: pointer;
+      &:hover{
+        background-color: $main-blue;
+      }
+      &.-active{
+        background-color: $main-blue;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+
+<footer data-ng-init="footerNav = {}; footerNav.toggler = false; footerNav.menu = false;" class="container -fluid footer-inner">
+  <div class="row">
+    <div class="column -xs-12 -md-10 -md-offset-1">
+      <div class="wrapper">
+        <div class="_md-hidden-up"><a href="javascript:void(0)" data-ng-click="footerNav.toggler = !footerNav.toggler; footerNav.menu = !footerNav.menu" data-ng-class="{'-active': footerNav.toggler === true}" class="footer-toggler _md-hidden-up"><span></span></a></div>
+        <nav data-ng-class="{'-open': footerNav.menu === true}" class="footer-menu _sm-hidden-down">
+          <ul class="list">
+            <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Send us an email</a></li>
+            <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Linkedin</a></li>
+            <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Terms & Conditions</a></li>
+            <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">© OPENSEA.PRO <script>document.write(new Date().getFullYear())</script></p>
+      </div>
+    </div>
+  </div>
+</footer>

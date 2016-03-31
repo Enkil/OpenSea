@@ -1,0 +1,201 @@
+a.pseudo-class-active,
+a.pseudo-class-hover {
+  outline: 0;
+}
+
+a.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+header.header nav.header-menu > .list > .item.pseudo-class-hover > .link {
+  color: #31b1ff;
+}
+
+header.header nav.header-menu > .list > .item.pseudo-class-hover > .link.-login {
+  background-color: #31b1ff;
+}
+
+div.lead-block-wrapper .lead-block > .btn.pseudo-class-hover {
+  background-color: #00ca6c;
+}
+
+div.lead-block-wrapper > a.animate-arrows.pseudo-class-hover > span.arrow > svg {
+  fill: #31b1ff;
+}
+
+section.benefits .benefit-item.pseudo-class-last-child {
+  border-bottom: none;
+}
+
+section.benefits .benefit-item > .title.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+section.benefits .benefit-item.pseudo-class-last-child.-active:before {
+  height: 100%;
+}
+
+section.benefits .dots-list > .dot.pseudo-class-hover {
+  background-color: #0086ff;
+}
+
+section.how-slider .slider-tabs > .tab.pseudo-class-hover {
+  background-color: #fff;
+  color: #0086ff;
+}
+
+section.how-slider .slider-tabs > .tab.pseudo-class-hover:after {
+  border-color: transparent transparent transparent #fff;
+}
+
+section.how-slider .slider-tabs > .tab.pseudo-class-last-child:before,
+section.how-slider .slider-tabs > .tab.pseudo-class-last-child:after {
+  display: none;
+}
+
+section.how-slider .slider-how > .arrows > button.prev > svg.pseudo-class-hover,
+section.how-slider .slider-how > .arrows > button.next > svg.pseudo-class-hover {
+  stroke: white;
+}
+
+section.different-slider .slider-different > .arrows > button.prev > svg.pseudo-class-hover,
+section.different-slider .slider-different > .arrows > button.next > svg.pseudo-class-hover {
+  stroke: #0086ff;
+}
+
+section.different-slider .dots-list > .dot.pseudo-class-hover {
+  background-color: #0086ff;
+}
+
+section.best-offers .best-offer > .offer-data td.pseudo-class-first-child {
+  width: 40%;
+  padding-right: 15px;
+  vertical-align: top;
+}
+
+section.best-offers .best-offer > .offer-data td.pseudo-class-last-child {
+  font-family: "Circle-Regular", sans-serif;
+}
+
+section.form-signin form.signin-form > label.label.-password > span.eye.pseudo-class-hover {
+  background-position: 0 13px;
+}
+
+section.form-signin form.signin-form > label.label.-password > span.eye.-show.pseudo-class-hover {
+  background-position: 0 37px;
+}
+
+section.form-signin form.signin-form > label.label.-password > span.eye.-hide.pseudo-class-hover {
+  background-position: 0 -13px;
+}
+
+section.form-signin form.signin-form > label.label > input.input.pseudo-class-focus {
+  border: 1px solid #0086ff;
+  box-shadow: 0 0 6px #99cfff;
+}
+
+section.form-signin form.signin-form > label.label > select.select.pseudo-class-focus {
+  border: 1px solid #0086ff;
+  box-shadow: 0 0 6px #99cfff;
+}
+
+section.form-signin form.signin-form > button.submit.pseudo-class-hover {
+  background-color: #00ca6c;
+}
+
+aside.main-menu a.link.-logo.pseudo-class-hover > svg {
+  fill: #fff !important;
+}
+
+aside.main-menu a.link.pseudo-class-hover {
+  color: #0086ff;
+}
+
+aside.main-menu a.link.pseudo-class-hover > svg {
+  fill: #0086ff;
+}
+
+aside.main-menu a.link.pseudo-class-hover > span.text {
+  color: #0086ff;
+}
+
+aside.main-menu a.arrow.pseudo-class-hover > svg {
+  fill: #0086ff;
+}
+
+.profile-btns a.link.-edit.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+ul.profile-submenu a.link.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+ul.profile-submenu a.link.-profile.pseudo-class-hover > svg {
+  fill: #31b1ff;
+}
+
+ul.profile-submenu a.link.-notifications.pseudo-class-hover > svg {
+  fill: none;
+  stroke: #31b1ff;
+}
+
+ul.profile-submenu a.link.-security.pseudo-class-hover > svg {
+  fill: none;
+  stroke: #31b1ff;
+}
+
+.profile-info > a.site.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+article.review-item a.link.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+.breadcrumbs-list a.arrow > svg.pseudo-class-hover {
+  stroke: #0086ff;
+}
+
+.breadcrumbs-list a.link.pseudo-class-hover {
+  color: #31b1ff;
+}
+
+footer.footer-inner li.item.pseudo-class-last-child {
+  margin-right: 0;
+}
+
+.input-checkbox > input.checkbox.pseudo-class-checked + label.label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../svg/check.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-item.-password > label.label > span.eye.pseudo-class-hover {
+  background-position: 0 13px;
+}
+
+.input-item.-password > label.label > span.eye.-show.pseudo-class-hover {
+  background-position: 0 37px;
+}
+
+.input-item.-password > label.label > span.eye.-hide.pseudo-class-hover {
+  background-position: 0 -13px;
+}
+
+.btn-item.pseudo-class-hover {
+  background-color: #31b1ff;
+}
+
+.btn-item.-danger.pseudo-class-hover {
+  background-color: #e74c3c;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" data-ng-app="opensea">
+  <head>
+    <title>OpenSea.pro • Manage your ships & cargoes online</title>
+    <!-- Main Meta information-->
+    <meta charset="utf-8">
+    <!-- Set preload resources (https://w3c.github.io/resource-hints/)-->
+    <link rel="prefetch" href="../../css/fonts/circle/bold/crc65.woff">
+    <link rel="prefetch" href="../../css/fonts/circle/light/crc35.woff">
+    <link rel="prefetch" href="../../css/fonts/circle/regular/crc55.woff">
+    <link rel="prefetch" href="../../css/fonts/proxima-nova/light/proxima_nova_light-webfont.woff">
+    <link rel="prefetch" href="../../css/fonts/proxima-nova/bold/proxima_nova_bold-webfont.woff">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="keywords" content="">
+    <meta name="description" content="OpenSea.pro • Manage your ships &amp; cargoes online">
+    <meta name="author" content="">
+    <!-- Meta Information-->
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="msapplication-tooltip" content="OpenSea.pro • Manage your ships &amp; cargoes online">
+    <meta name="msapplication-starturl" content="https://opensea.pro/?pinned=true">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="OpenSea.pro • Manage your ships &amp; cargoes online">
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="OpenSea.pro • Manage your ships &amp; cargoes online">
+    <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+    <!-- Web Application Manifest-->
+    <link rel="manifest" href="../../img/favicon/manifest.json">
+    <!-- Tile icon for Win8 (144x144 + title color)-->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- OpenGraph microformat-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OpenSea">
+    <meta property="og:site_name" content="OpenSea.pro">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Manage your ships &amp; cargoes online">
+    <meta property="og:image" content="">
+    <!-- Twitter microformat-->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="OpenSea.pro">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="OpenSea">
+    <meta name="twitter:description" content="Manage your ships &amp; cargoes online">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:domain" content="opensea.pro">
+    <link rel="canonical" href="/">
+    <link rel="image_src" href="#">
+    <link rel="shortlink" href="#">
+    <link type="text/plain" rel="author" href="humans.txt">
+    <!-- Set CSS-->
+    <link rel="stylesheet" href="../../css/main.purify.min.css">
+  </head>
+  <body>
+    <!--Created by itimohin on 12.02.16.
+    -->
+    <aside data-ng-init="mainNav = {}; mainNav.openned = true; mainNavLink = {}; mainNavLink.active = 'profile';" data-ng-class="{'-openned': mainNav.openned === true}" class="main-menu">
+      <nav class="nav">
+        <ul class="list">
+          <li class="item"><a href="javascript:void(0)" title="Profile" class="link -logo">
+              <svg>
+                <use xlink:href="#logo-small"></use>
+              </svg></a></li>
+          <li class="item"><a href="javascript:void(0)" title="Add vessel" data-ng-click="mainNavLink.active = 'add-vessel';" data-ng-class="{'-active': mainNavLink.active === 'add-vessel'}" class="link -vessel -first">
+              <svg class="-md">
+                <use xlink:href="#vessel-md"></use>
+              </svg>
+              <svg class="-xs">
+                <use xlink:href="#vessel"></use>
+              </svg><span class="text">Add vessel</span></a></li>
+          <li class="item"><a href="javascript:void(0)" title="Add cargo" data-ng-click="mainNavLink.active = 'add-cargo';" data-ng-class="{'-active': mainNavLink.active === 'add-cargo'}" class="link -cargo">
+              <svg>
+                <use xlink:href="#cargo"></use>
+              </svg><span class="text">Add cargo</span></a></li>
+          <li class="item"><a href="javascript:void(0)" title="My positions" data-ng-click="mainNavLink.active = 'positions';" data-ng-class="{'-active': mainNavLink.active === 'positions'}" class="link -positions -base">
+              <svg class="-closed -xs">
+                <use xlink:href="#positions-closed"></use>
+              </svg>
+              <svg class="-graded -xs">
+                <use xlink:href="#positions-graded"></use>
+              </svg>
+              <svg class="-base -xs">
+                <use xlink:href="#positions"></use>
+              </svg>
+              <svg class="-closed -md">
+                <use xlink:href="#positions-closed-md"></use>
+              </svg>
+              <svg class="-graded -md">
+                <use xlink:href="#positions-graded-md"></use>
+              </svg>
+              <svg class="-base -md">
+                <use xlink:href="#positions-md"></use>
+              </svg><span class="text">My positions</span></a></li>
+          <li class="item"><a href="javascript:void(0)" title="Messages" data-ng-click="mainNavLink.active = 'messages';" data-ng-class="{'-active': mainNavLink.active === 'messages'}" class="link -messages -none">
+              <svg class="no-msg">
+                <use xlink:href="#messages"></use>
+              </svg>
+              <svg class="new-msg">
+                <use xlink:href="#messages-new"></use>
+              </svg><span class="unread">0</span><span class="text">Messages</span></a></li>
+          <li class="item"><a href="javascript:void(0)" title="Analytics" data-ng-click="mainNavLink.active = 'analytics';" data-ng-class="{'-active': mainNavLink.active === 'analytics'}" class="link -analytics">
+              <svg>
+                <use xlink:href="#analytics"></use>
+              </svg><span class="text">Analytics</span></a></li>
+          <li class="item"><a href="javascript:void(0)" title="Profile" data-ng-click="mainNavLink.active = 'profile';" data-ng-class="{'-active': mainNavLink.active === 'profile'}" class="link -profile">
+              <svg>
+                <use xlink:href="#profile"></use>
+              </svg><span class="text">Profile</span></a></li>
+        </ul>
+      </nav><a href="javascript:void(0)" data-ng-click="mainNav.openned = !mainNav.openned" class="arrow">
+        <svg>
+          <use xlink:href="#main-menu-arrow"></use>
+        </svg></a>
+    </aside>
+    <main class="main-inner">
+    </main>
+    <footer data-ng-init="footerNav = {}; footerNav.toggler = false; footerNav.menu = false;" class="container -fluid footer-inner">
+      <div class="row">
+        <div class="column -xs-12 -md-10 -md-offset-1">
+          <div class="wrapper">
+            <div class="_md-hidden-up"><a href="javascript:void(0)" data-ng-click="footerNav.toggler = !footerNav.toggler; footerNav.menu = !footerNav.menu" data-ng-class="{'-active': footerNav.toggler === true}" class="footer-toggler _md-hidden-up"><span></span></a></div>
+            <nav data-ng-class="{'-open': footerNav.menu === true}" class="footer-menu _sm-hidden-down">
+              <ul class="list">
+                <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Send us an email</a></li>
+                <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Linkedin</a></li>
+                <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Terms & Conditions</a></li>
+                <li class="item"><a href="javascript:void(0)" title="Send us an email" class="link">Privacy Policy</a></li>
+              </ul>
+            </nav>
+            <p class="copyright">© OPENSEA.PRO <script>document.write(new Date().getFullYear())</script></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scripts">
+      <script src="../../js/vendor/vendor-bundle.js"></script>
+      <script src="../../js/custom/custom-bundle.js"></script>
+    </div>
+  </body>
+</html>

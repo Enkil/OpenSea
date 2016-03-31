@@ -1,0 +1,150 @@
+.reputation-reviews{
+  margin-top: 22px;
+
+  > .head{
+    margin-bottom: 20px;
+  }
+
+  nav.nav{
+    display: inline-block;
+    @include mq($from: md, $until: lg) {
+      display: inline-block;
+      margin-top: 20px;
+    }
+    @include mq($from: xs, $until: sm) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  }
+
+  h3.title{
+    font-family: Circle-Bold, sans-serif;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0;
+    margin-right: 40px;
+    display: inline-block;
+    color: $black;
+  }
+
+  a.filter{
+    display: inline-block;
+    margin-right: 40px;
+    color: $black;
+    text-decoration: none;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+
+    > span {
+      display: inline-block;
+      font-size: 12px;
+      font-family: Circle-Regular, sans-serif;
+      line-height: 14px;
+      height: 14px;
+      box-sizing: border-box;
+      color: #fff;
+      margin-left: 7px;
+      position: relative;
+      padding-left: 5px;
+      padding-right: 10px;
+      padding-top: 1px;
+    }
+
+    & > span:before{
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-style: solid;
+      border-width: 7px 4px 7px 0;
+      border-color: transparent #ffffff transparent transparent;
+    }
+
+    &.-all{
+      > span {
+        color: $black;
+        font-family: Circle-Bold, sans-serif;
+      }
+      &.-active > span{
+        color: $main-blue;
+      }
+    }
+    &.-positive > span{
+      background-color: $green-2;
+
+    }
+    &.-neutral > span{
+      background-color: $grey-8;
+    }
+    &.-negative > span{
+      background-color: $red;
+    }
+    &.-active{
+      font-family: Circle-Bold, sans-serif;
+      color: $main-blue;
+    }
+  }
+}
+
+article.review-item{
+  display: flex;
+  border-left: 3px solid;
+  &.-positive{
+    h4.title{  color: $green-2;}
+    border-color: $green-2;
+  }
+  &.-neutral{
+    h4.title{  color: $grey-8;}
+    border-color: $grey-5;
+  }
+  &.-negative{
+    h4.title{  color: $red;}
+    border-color: $red;
+  }
+
+  > .data{
+    max-width: 71%;
+    flex: 0 0 71%;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+  }
+  > .position{
+    max-width: 29%;
+    flex: 0 0 29%;
+  }
+
+  h4.title{
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+  }
+  p.text{
+    font-family: Circle-Regular, sans-serif;
+    font-size: 14px;
+  }
+  time.date{
+    font-family: Circle-Regular, sans-serif;
+    font-size: 14px;
+    color: $grey-8;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  a.link{
+    @include transition();
+    display: block;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 14px;
+    color: $main-blue;
+    margin: 0;
+    text-decoration: none;
+    &:hover{
+      color: $main-blue_hover;
+    }
+  }
+}

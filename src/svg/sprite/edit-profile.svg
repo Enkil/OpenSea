@@ -1,0 +1,27 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 25 25" xml:space="preserve">
+<style type="text/css">
+	.st12{fill:none;stroke:#CCCCCC;stroke-miterlimit:10;}
+	.st30{fill:#808080;}
+</style>
+
+<g id="Layer_1">
+	<g>
+		<g>
+			<g>
+				<path class="st30" d="M14.5,10l-5.9,5.9c0,0,0.6,0.3,1.2,0.9c0.6,0.6,0.9,1.2,0.9,1.2l5.9-5.9l0,0C16.6,12.1,14.5,10,14.5,10z"
+					/>
+			</g>
+			<g>
+				<path class="st30" d="M18.1,10.6l1-1L17,7.5l-1,1C16,8.5,18.1,10.5,18.1,10.6z"/>
+			</g>
+			<g>
+				<path class="st30" d="M7.8,18l-0.6,1.5l1.4-0.7L7.8,18z"/>
+			</g>
+		</g>
+		<g>
+			<path class="st12" d="M24.5,21.5c0,1.7-1.3,3-3,3h-18c-1.7,0-3-1.3-3-3v-18c0-1.7,1.3-3,3-3h18c1.7,0,3,1.3,3,3V21.5z"/>
+		</g>
+	</g>
+</g>
+</svg>

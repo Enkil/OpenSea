@@ -1,0 +1,39 @@
+mixin review(type)
+    - var titles = ['Positive','Neutral','Negative']
+    - var textPositive = 'To be fair to Emma, she concedes later on that Finns have plenty of technology at their disposal (Smartboards, mobile devices, laptop computers — they’re even developing an educational cloud-based service in collaboration with Estonia) and that they are actually making good, discerning use of it. And this is perhaps where her criticism ought to have been focused.'
+    - var textNeutral = 'And this is perhaps where her criticism ought to have been focused.To be fair to Emma, she concedes later on that Finns have plenty of technology at their disposal (Smartboards, mobile devices, laptop computers — they’re even developing an educational cloud-based service in collaboration with Estonia) and that they are actually making good, discerning use of it. '
+    - var textNegative = 'Smartboards, mobile devices, laptop computers — they’re even developing an educational cloud-based service in collaboration with Estonia) and that they are actually making good, discerning use of it. And this is perhaps where her criticism ought to have been focused.To be fair to Emma, she concedes later on that Finns have plenty of technology at their disposal '
+
+    if type === "positive"
+        article.review-item.-positive.column.-xs-12.-md-10.-md-offset-1
+            .data
+                h4.title= titles[0]
+                p.text= textPositive
+
+            .position
+                time(datetime="2004-07-24T18:18:18").date 16 april 10:45
+                a(href="javascript:void(0)" title="65000 mts Coal, SF 46 Long Beach (US) - Hangzhou (CH)").link
+                    | 65000 mts Coal, SF 46 <br/>
+                    | Long Beach (US) - Hangzhou (CH)
+
+    else if type === "neutral"
+        article.review-item.-neutral.column.-xs-12.-md-10.-md-offset-1
+            .data
+                h4.title= titles[1]
+                p.text= textNeutral
+            .position
+                time(datetime="2004-07-24T18:18:18").date 16 april 10:45
+                a(href="javascript:void(0)" title="65000 mts Coal, SF 46 Long Beach (US) - Hangzhou (CH)").link
+                    | 65000 mts Coal, SF 46 <br/>
+                    | Long Beach (US) - Hangzhou (CH)
+
+    else if  type === "negative"
+        article.review-item.-negative.column.-xs-12.-md-10.-md-offset-1
+            .data
+                h4.title= titles[2]
+                p.text= textNegative
+            .position
+                time(datetime="2004-07-24T18:18:18").date 16 april 10:45
+                a(href="javascript:void(0)" title="65000 mts Coal, SF 46 Long Beach (US) - Hangzhou (CH)").link
+                    | 65000 mts Coal, SF 46 <br/>
+                    | Long Beach (US) - Hangzhou (CH)

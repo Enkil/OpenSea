@@ -1,0 +1,16 @@
+.row.profile-head
+    .column.-xs-6.-md-6.-md-offset-1
+        h1.profile-title Profile
+        if editProfile === false
+            include ../components/_profile-submenu
+    .column.-xs-6.-md-4
+        .profile-btns
+            ul.list
+                if editProfile === false
+                    li.item
+                        a(href="javascript:void(0)" title="Edit profile").link.-edit
+                            svg
+                                use(xlink:href="#edit-profile")
+                            span Edit profile
+                li.item
+                    a(href="javascript:void(0)" title="Log out").link.btn-item.-signout Log out

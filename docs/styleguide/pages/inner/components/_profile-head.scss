@@ -1,0 +1,68 @@
+.profile-head{
+  margin-bottom: 40px;
+}
+
+h1.profile-title{
+  font-family: Circle-Bold, sans-serif;
+  font-size: 30px;
+  color: $black;
+  margin-top: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.profile-btns{
+
+  > ul.list{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-size: 0;
+    @include mq($from: xs, $until: lg) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  li.item{
+    font-size: 0;
+    display: inline-block;
+    @include mq($from: xs, $until: lg) {
+      &:first-child{
+        order: 1;
+      }
+      &:last-child{
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  a.link{
+    @include transition();
+    font-family: Circle-Regular, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    text-decoration: none;
+    
+    &.-edit{
+      color: $main-blue;
+      > svg {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+      &:hover{
+        color: $main-blue_hover;
+      }
+    }
+    &.-signout{
+      margin-left: 40px;
+      color: #fff;
+      @include mq($from: xs, $until: md) {
+        margin-left: 0;
+      }
+    }
+  }
+}

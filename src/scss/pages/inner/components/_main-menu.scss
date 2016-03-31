@@ -1,0 +1,283 @@
+aside.main-menu{
+  @include transition();
+  width: 65px;
+  min-height: 768px;
+  background-color: $grey-5;
+  position: relative;
+  flex-shrink: 0;
+  &.-openned{
+    width: 90px;
+
+    & > a.arrow{
+      transform: rotate(180deg);
+    }
+
+    & span.text{
+      display: block;
+    }
+  }
+
+  //@include mq($from: xs, $until: md) {
+  //  order: 1;
+  //  width: 100%;
+  //  min-height: 1px;
+  //  position: fixed;
+  //  bottom: 0;
+  //  left: 0;
+  //  z-index: 10;
+  //
+  //  &.-openned{
+  //    width: 100%;
+  //  }
+  //
+  //  > a.arrow{
+  //    display: none;
+  //  }
+  //
+  //}
+
+  > nav.nav{
+    width: inherit;
+    position: fixed;
+    left: 0;
+    //@include mq($from: xs, $until: md) {
+    //  width: 100%;
+    //  position: relative;
+    //}
+  }
+
+  ul.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    //@include mq($from: xs, $until: md) {
+    //  display: flex;
+    //  justify-content: space-between;
+    //  align-items: stretch;
+    //}
+  }
+
+  li.item{
+    width: 100%;
+
+    //@include mq($from: xs, $until: md) {
+    //  &:first-child{
+    //    max-width: 60px;
+    //    min-width: 30px;
+    //  }
+    //}
+    //
+    //@include mq($from: xs, $until: md) {
+    //  display: flex;
+    //  align-items: stretch;
+    //  width: auto;
+    //}
+  }
+
+  a.link{
+    //@include transition();
+    width: 100%;
+    //height: 100%;
+    color: $grey-7;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    position: relative;
+    //@include mq($from: xs, $until: md) {
+    //  padding: 10px;
+    //  align-items: center;
+    //}
+
+    > svg{
+      //@include transition();
+      margin-bottom: 10px;
+
+      width: 45px;
+      height: 30px;
+      fill: $grey-6;
+
+      //@include mq($from: xs, $until: md, $and: '(orientation: landscape)') {
+      //  height: 20px!important;
+      //  margin-bottom: 10px;
+      //  width: 60px;
+      //}
+      //@include mq($from: xs, $until: md, $and: '(orientation: portrait)') {
+      //  margin-bottom: 0;
+      //  width: 100%;
+      //  height: 20px!important;
+      //}
+    }
+
+    &.-first{
+      padding-top: 18px;
+      //@include mq($from: xs, $until: md) {
+      //  padding: 10px;
+      //}
+    }
+    &.-logo{
+      height: 50px;
+      background-color: $main-blue;
+      align-items: center;
+      padding: 0;
+      //@include mq($from: xs, $until: md) {
+      //  padding: 5px;
+      //  color: $main-blue;
+      //  height: auto;
+      //  max-width: 60px;
+      //  min-width: 30px;
+      //}
+      > svg {
+        fill: #fff;
+        margin-bottom: 0;
+      }
+      &:hover > svg{
+        fill: #fff!important;
+      }
+    }
+
+    &.-vessel{
+      > svg.-xs{
+        display: none;
+        //@include mq($from: md) {
+        //  display: none;
+        //}
+      }
+      > svg.-md{
+        width: 55px;
+        //@include mq($from: xs, $until: md) {
+        //  display: none;
+        //}
+      }
+    }
+    &.-positions.-base{
+      > svg.-closed{  display: none;}
+      > svg.-graded{  display: none;}
+      > svg.-base{  }
+    }
+    &.-positions.-closed{
+      > svg.-base{  display: none;}
+      > svg.-graded{  display: none;}
+      > svg.-closed{  }
+    }
+    &.-positions.-graded{
+      > svg.-closed{  display: none;}
+      > svg.-base{  display: none;}
+      > svg.-graded{}
+    }
+    &.-positions{
+      > svg {
+        height: 33px;
+      }
+      > svg.-xs{
+        height: 20px;
+        display: none;
+        //@include mq($from: md) {
+        //  display: none;
+        //}
+      }
+      > svg.-md{
+        //@include mq($from: xs, $until: md) {
+        //  display: none;
+        //}
+      }
+    }
+
+    &.-messages.-none{
+      > svg.new-msg{  display: none;}
+      > svg.no-msg{}
+      span.unread {  display: none;  }
+    }
+    &.-messages.-new{
+      > svg.no-msg{  display: none;}
+      > svg.new-msg{  fill: $main-blue;  }
+    }
+    &.-profile{
+
+    }
+
+    span.unread{
+      position: absolute;
+      font-family: Circle-Bold, sans-serif;
+      font-size: 12px;
+      color: #fff;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      cursor: pointer;
+      width: 41px;
+      padding: 2px 6px 0 0;
+      text-align: center;
+      //@include mq($from: xs, $until: md) {
+      //  font-size: 8px;
+      //}
+    }
+
+    &:hover{
+      color: $main-blue;
+      & > svg{
+        fill: $main-blue;
+      }
+      & > span.text{
+        color: $main-blue;
+      }
+    }
+
+    &.-active{
+      background-color: #fff;
+      color: $main-blue;
+
+      & > svg{
+        fill: $main-blue;
+      }
+    }
+  }
+
+  span.text{
+    font-family: Circle-Regular, sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    display: none;
+    line-height: 1;
+    //@include mq($from: xs, $until: md, $and: '(orientation: landscape)') {
+    //  font-size: 10px;
+    //}
+    //@include mq($from: xs, $until: md, $and: '(orientation: portrait)') {
+    //  display: none!important;
+    //}
+  }
+
+  a.arrow{
+    width: inherit;
+    height: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 25px;
+
+    > svg{
+      @include transition();
+      width: 25px;
+      height: auto;
+      fill: $grey-6;
+    }
+
+    &:hover{
+      & > svg{
+        fill: $main-blue;
+      }
+    }
+    @media all and (max-height: 600px){
+      display: none;
+    }
+  }
+}

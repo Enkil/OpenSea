@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Circle-Regular";
+  src: url("../css/fonts/circle/regular/crc55.eot"), local("Circle-Regular");
+  src: url("../css/fonts/circle/regular/crc55.eot?#iefix") format("embedded-opentype"), local("Circle-Regular"), url("../css/fonts/circle/regular/crc55.woff") format("woff"), url("../css/fonts/circle/regular/crc55.ttf") format("truetype"), url("../css/fonts/circle/regular/crc55.svg#Circle-Regular") format("svg");
+}
+
+@font-face {
+  font-family: "Circle-Bold";
+  src: url("../css/fonts/circle/bold/crc65.eot"), local("Circle-Bold");
+  src: url("../css/fonts/circle/bold/crc65.eot?#iefix") format("embedded-opentype"), local("Circle-Bold"), url("../css/fonts/circle/bold/crc65.woff") format("woff"), url("../css/fonts/circle/bold/crc65.ttf") format("truetype"), url("../css/fonts/circle/bold/crc65.svg#Circle-Bold") format("svg");
+}
+
+@font-face {
+  font-family: "Circle-Light";
+  src: url("../css/fonts/circle/light/crc35.eot"), local("Circle-Light");
+  src: url("../css/fonts/circle/light/crc35.eot?#iefix") format("embedded-opentype"), local("Circle-Light"), url("../css/fonts/circle/light/crc35.woff") format("woff"), url("../css/fonts/circle/light/crc35.ttf") format("truetype"), url("../css/fonts/circle/light/crc35.svg#Circle-Light") format("svg");
+}
+
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("../css/fonts/proxima-nova/light/proxima_nova_light-webfont.eot"), local("ProximaNova-Light");
+  src: url("../css/fonts/proxima-nova/light/proxima_nova_light-webfont.eot?#iefix") format("embedded-opentype"), local("ProximaNova-Light"), url("../css/fonts/proxima-nova/light/proxima_nova_light-webfont.woff") format("woff"), url("../css/fonts/proxima-nova/light/proxima_nova_light-webfont.ttf") format("truetype"), url("../css/fonts/proxima-nova/light/proxima_nova_light-webfont.svg#ProximaNova-Light") format("svg");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: url("../css/fonts/proxima-nova/bold/proxima_nova_bold-webfont.eot"), local("ProximaNova-Bold");
+  src: url("../css/fonts/proxima-nova/bold/proxima_nova_bold-webfont.eot?#iefix") format("embedded-opentype"), local("ProximaNova-Bold"), url("../css/fonts/proxima-nova/bold/proxima_nova_bold-webfont.woff") format("woff"), url("../css/fonts/proxima-nova/bold/proxima_nova_bold-webfont.ttf") format("truetype"), url("../css/fonts/proxima-nova/bold/proxima_nova_bold-webfont.svg#ProximaNova-Bold") format("svg");
+}
+
+@keyframes arrow-movement {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 50%;
+  }
+
+  100% {
+    top: 0;
+  }
+}

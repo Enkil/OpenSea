@@ -1,0 +1,152 @@
+section.best-offers{
+  background-color: $grey;
+  padding-bottom: 95px;
+
+  .best-offers-text{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Circle-Light", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    > p{
+      margin: 0;
+
+    }
+  }
+
+  .best-offers-slider{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 5px;
+  }
+
+  .slides-list{
+    display: flex;
+
+  }
+
+  .best-offer{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    width: 280px;
+    margin: 0 10px;
+    flex-shrink: 0;
+
+    > .head{
+      background-color: $main-blue;
+      height: 45px;
+      line-height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      > svg{
+        width: 40px;
+        height: 20px;
+        fill: #fff;
+      }
+    }
+    > .offer-data{
+      width: 100%;
+      padding: 20px 30px 20px 20px;
+      min-height: 250px;
+      box-sizing: border-box;
+      display: flex;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      tr{
+        width: 100%;
+      }
+      td{
+        font-size: 15px;
+        line-height: 30px;
+        font-family: "Circle-Light", sans-serif;
+        &:first-child{
+          width: 40%;
+          padding-right: 15px;
+          vertical-align: top;
+        }
+        &:last-child{
+          //width: 60%;
+          font-family: "Circle-Regular", sans-serif;
+          //text-transform: uppercase;
+        }
+      }
+
+    }
+  }
+
+  .offers-range{
+    width: 100%;
+    margin-top: 45px;
+    appearance: none;
+    background-color: $grey-2;
+    border-radius: 3px;
+    height: 5px;
+    box-sizing: border-box;
+    outline: none;
+    @include mq($from: xs, $until: md) {
+      height: 8px;
+    }
+    &::-webkit-slider-thumb{
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 5px solid $main-blue;
+      @include mq($from: xs, $until: md) {
+        height: 26px;
+        width: 26px;
+      }
+    }
+    &::-moz-range-track{
+      width: 100%;
+      margin-top: 45px;
+      appearance: none;
+      background-color: $grey-2;
+      border-radius: 3px;
+      height: 5px;
+      box-sizing: border-box;
+      outline: none;
+    }
+    &::-moz-range-thumb{
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 5px solid $main-blue;
+      @include mq($from: xs, $until: md) {
+        height: 26px;
+        width: 26px;
+      }
+    }
+    &::-ms-fill-lower, &::-ms-fill-upper{
+      background: transparent;
+    }
+    &::-ms-track{
+      width: 100%;
+      margin-top: 45px;
+      appearance: none;
+      background-color: $grey-2;
+      border-radius: 3px;
+      height: 5px;
+      box-sizing: border-box;
+      outline: none;
+    }
+    &::-ms-thumb{
+      appearance: none;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      border: 5px solid $main-blue;
+      @include mq($from: xs, $until: md) {
+        height: 26px;
+        width: 26px;
+      }
+    }
+  }
+}

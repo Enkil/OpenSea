@@ -1,0 +1,81 @@
+// Benefits block
+section(data-ng-init="benefit = {}; benefit.tab = 'findpositions-tab';" id="benefits").benefits
+    .container
+        .row
+            .column.-xs-12
+                h2.landing-title What benefits OpenSea gives to me?
+        .row
+            div(role="tablist").column.-xs-12.-lg-4
+                article(role="presentation" data-ng-class="{'-active': benefit.tab === 'findpositions-tab'}").benefit-item
+                    h3(role="tab"
+                        id="findpositions-tab"
+                        aria-controls="findpositions"
+                        aria-expanded="true"
+                        data-ng-click="benefit.tab = 'findpositions-tab';").title Instantly find matching positions
+                    div(role="tabpanel"
+                        id="findpositions"
+                        aria-labelledby="findpositions-tab").text
+                        p.
+                            As soon as you've placed a position, the web-application shows you suitable ones. Easily choose the best & send offer. You will also get an email notification once somebody opens new one suitable for you.
+
+                article(role="presentation" data-ng-class="{'-active': benefit.tab === 'chooserate-tab'}").benefit-item
+                    h3(role="tab"
+                        id="chooserate-tab"
+                        aria-controls="chooserate"
+                        aria-expanded="false"
+                        data-ng-click="benefit.tab = 'chooserate-tab';").title Choose best freight rates
+                    div(role="tabpanel" id="chooserate" aria-labelledby="chooserate-tab").text
+                        p.
+                            From now charterers and brokers can place cargoes with freight idea.<br/>
+                            Shipowners are able to add named tonnage without risk of its disclosure. All ships and cargoes are depersonalized until you'll start firm negotiations.
+
+                article(role="presentation" data-ng-class="{'-active': benefit.tab === 'fixonline-tab'}").benefit-item
+                    h3(role="tab"
+                        id="fixonline-tab"
+                        aria-controls="fixonline"
+                        aria-expanded="false"
+                        data-ng-click="benefit.tab = 'fixonline-tab';").title Fix online & on the go
+                    div(role="tabpanel" id="fixonline" aria-labelledby="fixonline-tab").text
+                        p.
+                            Get offers, discuss terms & fix charter party online.
+                            Start your firm negotiations and send a final recap or ship’s docs or whatever you need in a single chat.
+                            All information available from anywhere & any device.
+
+                article(role="presentation" data-ng-class="{'-active': benefit.tab === 'realtimemap-tab'}").benefit-item
+                    h3(role="tab"
+                        id="realtimemap-tab"
+                        aria-controls="realtimemap"
+                        aria-expanded="false"
+                        data-ng-click="benefit.tab = 'realtimemap-tab';").title Realtime worldwide map
+                    div(role="tabpanel" id="realtimemap" aria-labelledby="realtimemap-tab").text
+                        p.
+                            Watch actual state of the world freight market.<br/>
+                            Real positions in any port of the world.<br/>
+                            Every inquiry is from your colleague or potential new client.
+
+            .column.-xs-12.-lg-7.-lg-offset-1
+                .benefit-image
+                    // image ng-hide
+                    img(src="../../img/pics/1-Instantly-find-mathing-position.png" alt="Instantly find matching positions" title="Instantly find matching positions"
+                        data-ng-show="benefit.tab === 'findpositions-tab'"
+                        ).image
+                    img(src="../../img/pics/2-Choose-best-freight-rates.png" alt="Choose best freight rates" title="Choose best freight rates"
+                        data-ng-show="benefit.tab === 'chooserate-tab'"
+                        ).image
+                    img(src="../../img/pics/3-Fix-online-&-on-the-go.png" alt="Fix online & on the go" title="Fix online & on the go"
+                        data-ng-show="benefit.tab === 'fixonline-tab'"
+                        ).image
+                    img(src="../../img/pics/4-Realtime-worldwide-map.png" alt="Realtime worldwide map" title="Realtime worldwide map"
+                        data-ng-show="benefit.tab === 'realtimemap-tab'"
+                        ).image
+
+            .column.-xs-12._lg-hidden-up
+                ul.dots-list
+                    li(data-ng-class="{'-active': benefit.tab === 'findpositions-tab'}"
+                        data-ng-click="benefit.tab = 'findpositions-tab';").dot
+                    li(data-ng-class="{'-active': benefit.tab === 'chooserate-tab'}"
+                        data-ng-click="benefit.tab = 'chooserate-tab';").dot
+                    li(data-ng-class="{'-active': benefit.tab === 'fixonline-tab'}"
+                        data-ng-click="benefit.tab = 'fixonline-tab';").dot
+                    li(data-ng-class="{'-active': benefit.tab === 'realtimemap-tab'}"
+                        data-ng-click="benefit.tab = 'realtimemap-tab';").dot

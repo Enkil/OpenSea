@@ -1,0 +1,38 @@
+{
+    "tags": {
+        "allowUnknownTags" : true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "source": {
+        "include": ["./src/js/custom/"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "docs/js"
+    },
+    "plugins": [
+        "plugins/markdown",
+        "plugins/summarize"],
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true,
+        "footer": "Created by Igor [Enkil] Timohin",
+        "copyright": "2015",
+        "default": {
+            "outputSourceFiles" : true
+        },
+        "applicationName": "Astra Media Group site scripts"
+    },
+    "markdown": {
+        "parser": "gfm",
+        "hardwrap": true,
+        "tags": ["examples"]
+    },
+    "opts": {
+        "template": "src/docs-templates/js/jaguar",
+        "encoding": "utf8",
+        "destination": "build/docs/js",
+        "recurse": true,
+        "private": true
+    }
+
+}
+

@@ -1,0 +1,72 @@
+//- @jadedoc
+    name: inputCheckbox mixin
+    description: input[checkbox] with label text generating
+    arguments:
+        - {string} inputID - ID for input and label "for" attribute
+        - {string} text - text for label
+        - {string} wrapperClass - text for wrapper <div>
+        - {string} labelClass - CSS-class for label, contains input
+        - {string} inputClass - CSS-class for input
+    examples:
+        - +inputCheckbox('recieve','Recieve newsletters','-inline')
+        - +inputCheckbox
+mixin inputCheckbox(inputID,text,wrapperClass,labelClass,inputClass)
+    div(class= wrapperClass).input-checkbox
+        input(type="checkbox" class=inputClass id=inputID).checkbox
+        label(class=labelClass for=inputID).label
+            =text
+
+//- @jadedoc
+    name: select mixin
+    description: select with option text generating
+    arguments:
+        - {array} text - text for options
+        - {string} wrapperClass - CSS-class for <div> wrapper, contains select
+        - {string} selectClass - CSS-class for select, contains options
+    examples:
+        - +select(['22:00','23:00'],'-inline')
+mixin select(options,wrapperClass,selectClass)
+    label(class=wrapperClass).select-item
+        select(class=selectClass).select
+            each option in options
+                option= option
+
+//- @jadedoc
+    name: inputText mixin
+    description: input[text] with label text generating
+    arguments:
+        - {string} inputID - ID for input and label "for" attribute
+        - {string} text - text for label
+        - {string} wrapperClass - text for wrapper <div>
+        - {string} labelClass - CSS-class for label, contains input
+        - {string} inputClass - CSS-class for input
+    examples:
+        - +inputCheckbox('recieve','Recieve newsletters','-inline')
+        - +inputCheckbox
+mixin inputText(inputID,text,wrapperClass,labelClass,inputClass)
+    div(class= wrapperClass).input-item
+        label(class=labelClass for=inputID).label
+            span.text= text
+            input(type="text" class=inputClass id=inputID).input
+
+//- @jadedoc
+    name: inputPassword mixin
+    description: input[password] with label text generating
+    arguments:
+        - {string} inputID - ID for input and label "for" attribute
+        - {string} text - text for label
+        - {string} wrapperClass - text for wrapper <div>
+        - {string} labelClass - CSS-class for label, contains input
+        - {string} inputClass - CSS-class for input
+        - {string} hintText - text for hint
+        - {string} hintClass - CSS-class for hint
+    examples:
+        - +inputCheckbox('recieve','Recieve newsletters','-inline')
+        - +inputCheckbox
+mixin inputPassword(inputID,text,wrapperClass,labelClass,inputClass,hintText,hintClass)
+    div(class= wrapperClass).input-item.-password
+        label(class=labelClass for=inputID).label
+            span.text= text
+            span.eye
+            input(type="password" class=inputClass id=inputID).input
+        p.hint= hintText

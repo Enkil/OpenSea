@@ -1,0 +1,12 @@
+extends templates/_profile-template
+
+block content
+
+    - var editProfile = false
+    - var profileSubmenuProfile = true
+    - var profileSubmenuNotifications = false
+    - var profileSubmenuSecurity = false
+    include components/_profile-head
+    include components/_profile-data
+    include components/_profile-reputation
+    include components/_breadcrumbs

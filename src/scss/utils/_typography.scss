@@ -1,0 +1,48 @@
+@include font-face('Circle-Regular', circle, regular, crc55);
+@include font-face('Circle-Bold', circle, bold, crc65);
+@include font-face('Circle-Light', circle, light, crc35);
+@include font-face('ProximaNova-Light', proxima-nova, light, proxima_nova_light-webfont);
+@include font-face('ProximaNova-Bold', proxima-nova, bold, proxima_nova_bold-webfont);
+
+h2.landing-title{
+  font-family: Circle-Bold, sans-serif;
+  font-size: 36px;
+  line-height: 1;
+  color: $main-blue;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  &.-white{  color: #ffffff;}
+  &.-smaller-margin{
+    margin-bottom: 40px;
+    margin-top: 70px;
+  }
+}
+
+h2.inner-title{
+  font-family: Circle-Bold, sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  color: $black;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  &.-unmargintop{
+    margin-top: 0;
+  }
+}
+
+p.inner-text{
+  font-family: Circle-Regular, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: $main-blue;
+  &:hover{
+    color: $main-blue_hover;
+  }
+}

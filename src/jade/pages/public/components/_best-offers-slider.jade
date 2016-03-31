@@ -1,0 +1,23 @@
+include ../mixins/_offers
+// Best offers slider
+section.best-offers
+    .container
+        .row
+            .column.-xs-1
+            .column.-xs-12
+                h2.landing-title Only real and best offers
+                .best-offers-text
+                    p.
+                        All applications are added to the system by their owners. We do not collect data from the Internet. All late or irrelevant items are deleted
+    .container.-fluid
+        .row
+            .best-offers-slider
+                .slides-list
+                    +offer-cargo
+                    +offer-shipping
+                    +offer-cargo
+                    +offer-shipping
+                    +offer-cargo
+                .row._justify-center
+                    .column.-xs-8
+                      input(type="range").offers-range

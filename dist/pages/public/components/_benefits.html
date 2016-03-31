@@ -1,0 +1,69 @@
+
+<!-- Benefits block-->
+<section data-ng-init="benefit = {}; benefit.tab = 'findpositions-tab';" id="benefits" class="benefits">
+  <div class="container">
+    <div class="row">
+      <div class="column -xs-12">
+        <h2 class="landing-title">What benefits OpenSea gives to me?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div role="tablist" class="column -xs-12 -lg-4">
+        <article role="presentation" data-ng-class="{'-active': benefit.tab === 'findpositions-tab'}" class="benefit-item">
+          <h3 role="tab" id="findpositions-tab" aria-controls="findpositions" aria-expanded="true" data-ng-click="benefit.tab = 'findpositions-tab';" class="title">Instantly find matching positions</h3>
+          <div role="tabpanel" id="findpositions" aria-labelledby="findpositions-tab" class="text">
+            <p>
+              As soon as you've placed a position, the web-application shows you suitable ones. Easily choose the best & send offer. You will also get an email notification once somebody opens new one suitable for you.
+              
+            </p>
+          </div>
+        </article>
+        <article role="presentation" data-ng-class="{'-active': benefit.tab === 'chooserate-tab'}" class="benefit-item">
+          <h3 role="tab" id="chooserate-tab" aria-controls="chooserate" aria-expanded="false" data-ng-click="benefit.tab = 'chooserate-tab';" class="title">Choose best freight rates</h3>
+          <div role="tabpanel" id="chooserate" aria-labelledby="chooserate-tab" class="text">
+            <p>
+              From now charterers and brokers can place cargoes with freight idea.<br/>
+              Shipowners are able to add named tonnage without risk of its disclosure. All ships and cargoes are depersonalized until you'll start firm negotiations.
+              
+            </p>
+          </div>
+        </article>
+        <article role="presentation" data-ng-class="{'-active': benefit.tab === 'fixonline-tab'}" class="benefit-item">
+          <h3 role="tab" id="fixonline-tab" aria-controls="fixonline" aria-expanded="false" data-ng-click="benefit.tab = 'fixonline-tab';" class="title">Fix online & on the go</h3>
+          <div role="tabpanel" id="fixonline" aria-labelledby="fixonline-tab" class="text">
+            <p>
+              Get offers, discuss terms & fix charter party online.
+              Start your firm negotiations and send a final recap or ship’s docs or whatever you need in a single chat.
+              All information available from anywhere & any device.
+              
+            </p>
+          </div>
+        </article>
+        <article role="presentation" data-ng-class="{'-active': benefit.tab === 'realtimemap-tab'}" class="benefit-item">
+          <h3 role="tab" id="realtimemap-tab" aria-controls="realtimemap" aria-expanded="false" data-ng-click="benefit.tab = 'realtimemap-tab';" class="title">Realtime worldwide map</h3>
+          <div role="tabpanel" id="realtimemap" aria-labelledby="realtimemap-tab" class="text">
+            <p>
+              Watch actual state of the world freight market.<br/>
+              Real positions in any port of the world.<br/>
+              Every inquiry is from your colleague or potential new client.
+              
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="column -xs-12 -lg-7 -lg-offset-1">
+        <div class="benefit-image">
+          <!-- image ng-hide--><img src="../../img/pics/1-Instantly-find-mathing-position.png" alt="Instantly find matching positions" title="Instantly find matching positions" data-ng-show="benefit.tab === 'findpositions-tab'" class="image"/><img src="../../img/pics/2-Choose-best-freight-rates.png" alt="Choose best freight rates" title="Choose best freight rates" data-ng-show="benefit.tab === 'chooserate-tab'" class="image"/><img src="../../img/pics/3-Fix-online-&amp;-on-the-go.png" alt="Fix online &amp; on the go" title="Fix online &amp; on the go" data-ng-show="benefit.tab === 'fixonline-tab'" class="image"/><img src="../../img/pics/4-Realtime-worldwide-map.png" alt="Realtime worldwide map" title="Realtime worldwide map" data-ng-show="benefit.tab === 'realtimemap-tab'" class="image"/>
+        </div>
+      </div>
+      <div class="column -xs-12 _lg-hidden-up">
+        <ul class="dots-list">
+          <li data-ng-class="{'-active': benefit.tab === 'findpositions-tab'}" data-ng-click="benefit.tab = 'findpositions-tab';" class="dot"></li>
+          <li data-ng-class="{'-active': benefit.tab === 'chooserate-tab'}" data-ng-click="benefit.tab = 'chooserate-tab';" class="dot"></li>
+          <li data-ng-class="{'-active': benefit.tab === 'fixonline-tab'}" data-ng-click="benefit.tab = 'fixonline-tab';" class="dot"></li>
+          <li data-ng-class="{'-active': benefit.tab === 'realtimemap-tab'}" data-ng-click="benefit.tab = 'realtimemap-tab';" class="dot"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

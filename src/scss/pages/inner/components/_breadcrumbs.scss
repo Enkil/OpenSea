@@ -1,0 +1,65 @@
+.breadcrumbs-list{
+  margin-top: 35px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+
+  a.arrow{
+
+    > svg{
+      width: 15px;
+      height: 24px;
+      @include transition(stroke);
+      stroke: lighten($main-blue, 30%);
+      fill: rgba(0,0,0,0);
+      stroke-width:4;
+      &:hover{
+        stroke: $main-blue;
+      }
+    }
+    &.-previous{
+
+    }
+    &.-next > svg{
+      transform: rotate(180deg);
+    }
+  }
+
+  ul.list{
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+  }
+  li.item{
+    display: inline-block;
+    margin: 0 15px;
+    @include mq($from: xs, $until: md) {
+      margin: 0 5px;
+    }
+  }
+  a.link{
+    @include transition();
+    display: inline-block;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+    color: $black;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    &:hover{
+      color: $main-blue_hover;
+    }
+    &.-active{
+      border-color: $main-blue;
+      color: $main-blue;
+    }
+  }
+}

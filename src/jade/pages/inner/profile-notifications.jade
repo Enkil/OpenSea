@@ -1,0 +1,27 @@
+extends templates/_profile-template
+include mixins/_form-components
+
+block content
+
+    - var editProfile = false
+    - var profileSubmenuProfile = false
+    - var profileSubmenuNotifications = true
+    - var profileSubmenuSecurity = false
+    include components/_profile-head
+    .row
+        .column.-xs-12.-md-10.-md-offset-1
+            h2.inner-title.-unmargintop Newsletter notifications
+            form(action="" method="").notifications-form
+                +inputCheckbox('recieve','Recieve newsletters','-inline')
+                +inputCheckbox('recievetime','24/7','-inline')
+
+                div
+                    +select(['6:00','6:00'],'-inline')
+                    span.dash &mdash;
+                    +select(['22:00','23:00'],'-inline')
+
+                +inputCheckbox('sendmessage','Someone sends me a message')
+                +inputCheckbox('expireposition','My open position will expire soon')
+                +inputCheckbox('newmatch','Found new match to my position')
+
+                button.btn-item Save

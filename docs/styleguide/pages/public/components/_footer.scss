@@ -1,0 +1,65 @@
+footer.footer{
+  min-height: 50px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  @include mq($from: xs, $until: md) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text{
+    color: $grey-4;
+    font-family: "ProximaNova-Light", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    @include mq($from: xs, $until: md) {
+      text-align: center;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+
+    > a{
+      font-family: "ProximaNova-Bold", sans-serif;
+      color: $grey-4;
+      text-decoration: none;
+    }
+  }
+  .slogan-img{
+    width: 135px;
+    height: 22px;
+    @include mq($from: xs, $until: md) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    > img{
+      width: 135px;
+      height: 22px;
+    }
+  }
+  .copyright{
+    color: $grey-4;
+    font-family: "ProximaNova-Light",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: right;
+    @include mq($from: xs, $until: md) {
+      text-align: center;
+    }
+  }
+}

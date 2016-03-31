@@ -1,0 +1,18 @@
+
+<!-- Header-->
+<header data-ng-init="headerNav = {}; headerNav.toggler = false; headerNav.menu = false;" class="header container">
+  <div class="row -xs-center">
+    <div class="column -xs-10 -md-3"><a href="index.html" title="OpenSea" class="logo-link"><img src="../../svg/logo-opensea.svg" alt="OpenSea" title="OpenSea" class="logo"/></a></div>
+    <div class="column -xs-2 _md-hidden-up"><a href="javascript:void(0)" data-ng-click="headerNav.toggler = !headerNav.toggler; headerNav.menu = !headerNav.menu" data-ng-class="{'-active': headerNav.toggler === true}" class="header-toggler _md-hidden-up"><span></span></a></div>
+    <div class="column -xs-12 -md-9">
+      <nav data-ng-class="{'-open': headerNav.menu === true}" class="header-menu _pull-right _sm-hidden-down">
+        <ul class="list">
+          <li class="item"><a href="#benefits" title="OpenSea Benefits" class="link">Benefits</a></li>
+          <li class="item"><a href="javascript:void(0)" title="OpenSea Pricing" class="link">Pricing</a></li>
+          <li class="item"><a href="javascript:void(0)" title="OpenSea Blog" class="link">Blog</a></li>
+          <li class="item"><a href="javascript:void(0)" title="Log in" class="link -login">Log in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

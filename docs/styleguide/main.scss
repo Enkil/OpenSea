@@ -1,0 +1,61 @@
+/*
+  # OpenSea.pro
+
+  Main SCSS-file
+
+  Provide import for all SCSS-files needed to projects styles
+
+  Author Igor [Enkil] Timohin [email](timohin.i@gmail.com)
+*/
+
+@charset "UTF-8";
+
+/*
+  # Import vendor CSS files
+*/
+
+@import "utils/variables";
+@import "vendor/mq";
+@import "../../bower_components/flex-sass-grid-generator/src/scss/flex-sass-grid-generator";
+
+
+/*
+  # Import common custom SCSS files
+*/
+
+@import "mixins/font-face";
+@import "mixins/transitions";
+@import "utils/png-sprite";
+@import "utils/svg-sprite";
+@import "utils/helpers";
+@import "utils/typography";
+
+
+/*
+  # Import public pages SCSS files
+*/
+
+@import "pages/public/components/header";
+@import "pages/public/components/lead";
+@import "pages/public/components/benefits";
+@import "pages/public/components/how-slider";
+@import "pages/public/components/different-slider";
+@import "pages/public/components/best-offers-slider";
+@import "pages/public/components/signin-form";
+@import "pages/public/components/footer";
+
+/*
+  # Import inner pages SCSS files
+*/
+
+@import "pages/inner/components/main-menu";
+@import "pages/inner/components/common";
+@import "pages/inner/components/profile-head";
+@import "pages/inner/components/profile-submenu";
+@import "pages/inner/components/profile-data";
+@import "pages/inner/components/profile-reputation";
+@import "pages/inner/components/breadcrumbs";
+@import "pages/inner/components/footer";
+@import "pages/inner/components/form-components";
+@import "pages/inner/components/profile-form";
+@import "pages/inner/components/buttons";

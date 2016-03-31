@@ -1,0 +1,59 @@
+
+<aside data-ng-init="mainNav = {}; mainNav.openned = true; mainNavLink = {}; mainNavLink.active = 'profile';" data-ng-class="{'-openned': mainNav.openned === true}" class="main-menu">
+  <nav class="nav">
+    <ul class="list">
+      <li class="item"><a href="javascript:void(0)" title="Profile" class="link -logo">
+          <svg>
+            <use xlink:href="#logo-small"></use>
+          </svg></a></li>
+      <li class="item"><a href="javascript:void(0)" title="Add vessel" data-ng-click="mainNavLink.active = 'add-vessel';" data-ng-class="{'-active': mainNavLink.active === 'add-vessel'}" class="link -vessel -first">
+          <svg class="-md">
+            <use xlink:href="#vessel-md"></use>
+          </svg>
+          <svg class="-xs">
+            <use xlink:href="#vessel"></use>
+          </svg><span class="text">Add vessel</span></a></li>
+      <li class="item"><a href="javascript:void(0)" title="Add cargo" data-ng-click="mainNavLink.active = 'add-cargo';" data-ng-class="{'-active': mainNavLink.active === 'add-cargo'}" class="link -cargo">
+          <svg>
+            <use xlink:href="#cargo"></use>
+          </svg><span class="text">Add cargo</span></a></li>
+      <li class="item"><a href="javascript:void(0)" title="My positions" data-ng-click="mainNavLink.active = 'positions';" data-ng-class="{'-active': mainNavLink.active === 'positions'}" class="link -positions -base">
+          <svg class="-closed -xs">
+            <use xlink:href="#positions-closed"></use>
+          </svg>
+          <svg class="-graded -xs">
+            <use xlink:href="#positions-graded"></use>
+          </svg>
+          <svg class="-base -xs">
+            <use xlink:href="#positions"></use>
+          </svg>
+          <svg class="-closed -md">
+            <use xlink:href="#positions-closed-md"></use>
+          </svg>
+          <svg class="-graded -md">
+            <use xlink:href="#positions-graded-md"></use>
+          </svg>
+          <svg class="-base -md">
+            <use xlink:href="#positions-md"></use>
+          </svg><span class="text">My positions</span></a></li>
+      <li class="item"><a href="javascript:void(0)" title="Messages" data-ng-click="mainNavLink.active = 'messages';" data-ng-class="{'-active': mainNavLink.active === 'messages'}" class="link -messages -none">
+          <svg class="no-msg">
+            <use xlink:href="#messages"></use>
+          </svg>
+          <svg class="new-msg">
+            <use xlink:href="#messages-new"></use>
+          </svg><span class="unread">0</span><span class="text">Messages</span></a></li>
+      <li class="item"><a href="javascript:void(0)" title="Analytics" data-ng-click="mainNavLink.active = 'analytics';" data-ng-class="{'-active': mainNavLink.active === 'analytics'}" class="link -analytics">
+          <svg>
+            <use xlink:href="#analytics"></use>
+          </svg><span class="text">Analytics</span></a></li>
+      <li class="item"><a href="javascript:void(0)" title="Profile" data-ng-click="mainNavLink.active = 'profile';" data-ng-class="{'-active': mainNavLink.active === 'profile'}" class="link -profile">
+          <svg>
+            <use xlink:href="#profile"></use>
+          </svg><span class="text">Profile</span></a></li>
+    </ul>
+  </nav><a href="javascript:void(0)" data-ng-click="mainNav.openned = !mainNav.openned" class="arrow">
+    <svg>
+      <use xlink:href="#main-menu-arrow"></use>
+    </svg></a>
+</aside>

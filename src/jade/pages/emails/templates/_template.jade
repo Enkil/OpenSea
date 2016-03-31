@@ -1,0 +1,15 @@
+//- Email template without footer
+doctype transitional
+html(xmlns='http://www.w3.org/1999/xhtml')
+    include ../components/_head
+    body
+
+        table.body
+            tr
+                td.center(align='center', valign='top')
+                    center
+                        table.container.shadow.main
+                            tr
+                                td
+                                    include ../components/_header
+                                    block content

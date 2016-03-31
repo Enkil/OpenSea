@@ -1,0 +1,31 @@
+.btn-item{
+  @include transition();
+  display: inline-block;
+  padding: 0 30px;
+  border-radius: 3px;
+  font-size: 16px;
+  text-decoration: none;
+  height: 35px;
+  line-height: 35px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0,0,0,.3);
+  background-color: $main-blue;
+  color: #fff;
+  font-family: Circle-Regular, sans-serif;
+  border: none;
+  outline: none;
+  &:hover{
+    background-color: $main-blue_hover;
+  }
+
+  &.-danger{
+    color: $red;
+    box-shadow: none;
+    background-color: transparent;
+    &:hover{
+      background-color: $red;
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    }
+  }
+}

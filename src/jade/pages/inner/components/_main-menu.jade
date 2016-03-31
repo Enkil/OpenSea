@@ -1,0 +1,72 @@
+aside(data-ng-init="mainNav = {}; mainNav.openned = true; mainNavLink = {}; mainNavLink.active = 'profile';"
+        data-ng-class="{'-openned': mainNav.openned === true}").main-menu
+
+    nav.nav
+        ul.list
+            li.item
+                a(href="javascript:void(0)" title="Profile").link.-logo
+                    svg
+                        use(xlink:href="#logo-small")
+            li.item
+                a(href="javascript:void(0)" title="Add vessel"
+                    data-ng-click="mainNavLink.active = 'add-vessel';"
+                    data-ng-class="{'-active': mainNavLink.active === 'add-vessel'}").link.-vessel.-first
+                    svg.-md
+                        use(xlink:href="#vessel-md")
+                    svg.-xs
+                        use(xlink:href="#vessel")
+                    span.text Add vessel
+            li.item
+                a(href="javascript:void(0)" title="Add cargo"
+                    data-ng-click="mainNavLink.active = 'add-cargo';"
+                    data-ng-class="{'-active': mainNavLink.active === 'add-cargo'}").link.-cargo
+                    svg
+                        use(xlink:href="#cargo")
+                    span.text Add cargo
+            li.item
+                a(href="javascript:void(0)" title="My positions"
+                    data-ng-click="mainNavLink.active = 'positions';"
+                    data-ng-class="{'-active': mainNavLink.active === 'positions'}").link.-positions.-base
+                    svg.-closed.-xs
+                        use(xlink:href="#positions-closed")
+                    svg.-graded.-xs
+                        use(xlink:href="#positions-graded")
+                    svg.-base.-xs
+                        use(xlink:href="#positions")
+                    svg.-closed.-md
+                        use(xlink:href="#positions-closed-md")
+                    svg.-graded.-md
+                        use(xlink:href="#positions-graded-md")
+                    svg.-base.-md
+                        use(xlink:href="#positions-md")
+                    span.text My positions
+            li.item
+                a(href="javascript:void(0)" title="Messages"
+                    data-ng-click="mainNavLink.active = 'messages';"
+                    data-ng-class="{'-active': mainNavLink.active === 'messages'}").link.-messages.-none
+                    svg.no-msg
+                        use(xlink:href="#messages")
+                    svg.new-msg
+                        use(xlink:href="#messages-new")
+                    span.unread 0
+                    span.text Messages
+            li.item
+                a(href="javascript:void(0)" title="Analytics"
+                    data-ng-click="mainNavLink.active = 'analytics';"
+                    data-ng-class="{'-active': mainNavLink.active === 'analytics'}").link.-analytics
+                    svg
+                        use(xlink:href="#analytics")
+                    span.text Analytics
+            li.item
+                a(href="javascript:void(0)" title="Profile"
+                    data-ng-click="mainNavLink.active = 'profile';"
+                    data-ng-class="{'-active': mainNavLink.active === 'profile'}").link.-profile
+                    svg
+                        use(xlink:href="#profile")
+                    span.text Profile
+
+    a(href="javascript:void(0)"
+        data-ng-click="mainNav.openned = !mainNav.openned").arrow
+        svg
+            use(xlink:href="#main-menu-arrow")
+

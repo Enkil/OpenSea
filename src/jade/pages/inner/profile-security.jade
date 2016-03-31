@@ -1,0 +1,28 @@
+extends templates/_profile-template
+include mixins/_form-components
+
+block content
+
+    - var editProfile = false
+    - var profileSubmenuProfile = false
+    - var profileSubmenuNotifications = false
+    - var profileSubmenuSecurity = true
+    include components/_profile-head
+    .row
+        .column.-xs-12.-md-10.-md-offset-1
+            h2.inner-title.-unmargintop Change password
+            form(action="" method="").security-form
+                +inputPassword('password','New password','-showHint','','','Password must contain letters and numbers only')
+                +inputPassword('repeatpassword','Repeat password','','','','Password must contain letters and numbers only')
+
+                button.btn-item Save
+
+            h2.inner-title Delete account
+            p.inner-text Your feedback and comments for other participants will remain in the system after deleting the account. No one else will be able to create an account with the same email address
+
+            form(action="" method="").form-agreement
+                +inputCheckbox('delete','','-inline')
+                span.agree I agree with the&nbsp;
+                    a(href="javascript:void(0)") rules of account deletion
+
+            a(href="javascript:void(0)").btn-item.-danger Delete

@@ -1,0 +1,20 @@
+doctype
+html(lang='en', prefix='og: http://ogp.me/ns#' data-ng-app="opensea")
+
+    include ../components/_head
+
+    body.body-inner
+
+
+        include ../components/_main-menu
+
+        main.main-inner
+            .container.-fluid.content
+                block content
+            include ../components/_footer
+
+        .svg-sprite._hide
+            include ../../../../../dist/svg/sprite/sprite.svg
+        .scripts
+            script(src="../../js/vendor/vendor-bundle.js")
+            script(src="../../js/custom/custom-bundle.js")

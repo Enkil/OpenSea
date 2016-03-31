@@ -1,0 +1,222 @@
+.input-checkbox{
+  margin-bottom: 25px;
+  &.-inline{
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  > label.label{
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color: $black;
+  }
+
+  > input.checkbox{
+    position: absolute;
+    opacity: 0;
+    &:not(checked) + label.label{
+      position: relative;
+      padding: 0 0 0 25px;
+    }
+    &:not(checked) + label.label:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      border: 2px solid $grey-8;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    &:checked + label.label:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 16px;
+      height: 16px;
+      background-image: url(../svg/check.svg);
+      background-size: 10px 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  > input.checkbox + label.label {
+    cursor: pointer;
+  }
+}
+
+.select-item{
+  margin-bottom: 25px;
+  position: relative;
+  cursor: pointer;
+  &:after{
+    content: '';
+    display: inline-block;
+    background-image: url(../img/arrow-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 10px;
+    background-size: contain;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 5px;
+    top: calc(50% - 5px);
+  }
+  &.-inline{
+    display: inline-block;
+    margin-right: 10px;
+    width: 100px;
+  }
+
+  select.select{
+    display: block;
+    width: 100%;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+    color: $black;
+    height: 35px;
+    line-height: 36px;
+    box-sizing: border-box;
+    border: 1px solid $grey-8;
+    border-radius: 3px;
+    background-color: $grey-9;
+    outline: none;
+    padding-left: 15px;
+    appearance: none;
+  }
+}
+
+.input-item{
+  margin-bottom: 20px;
+  position: relative;
+
+  > label.label{
+    display: inline-block;
+  }
+
+  span.text{
+    font-family: Circle-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    display: inline-block;
+    min-width: 122px;
+    padding-right: 5px;
+    color: $black;
+  }
+
+  input.input{
+    display: inline-block;
+    width: 290px;
+    box-sizing: border-box;
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+    color: $black;
+    height: 35px;
+    line-height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+    border: 1px solid $grey-8;
+    border-radius: 3px;
+  }
+
+  &.-password{
+    @include mq($from: xs, $until: md) {
+      display: flex;
+      flex-direction: column;
+    }
+    > p.hint{
+      font-family: Circle-Regular, sans-serif;
+      font-size: 14px;
+      line-height: 20px;
+      width: 240px;
+      border: 1px solid $grey-8;
+      border-radius: 3px;
+      position: absolute;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      margin: 0;
+      left: 440px;
+      top: 0;
+      display: none;
+      &:before{
+        content: '';
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid $grey-8;
+        border-left: 1px solid $grey-8;
+        transform: rotate(-45deg);
+        box-sizing: border-box;
+        left: -6px;
+        top: 12px;
+        background-color: #fff;
+        @include mq($from: xs, $until: md){
+          left: 5px;
+          top: -5px;
+          transform: rotate(45deg);
+        }
+      }
+
+      @include mq($from: xs, $until: md, $and: '(orientation: landscape)') {
+        position: relative;
+        left: 130px;
+        top: 10px;
+      }
+      @include mq($from: xs, $until: md, $and: '(orientation: portrait)') {
+        position: relative;
+        left: 0;
+        top: 10px;
+      }
+
+    }
+  }
+
+  &.-password > label.label{
+    position: relative;
+    > span.eye{
+      position: absolute;
+      width: 18px;
+      height: 12px;
+      background-size: 18px 73px;
+      background-position: 0 25px;
+      background-image: url(../svg/eye_grey-sprite.svg);
+      cursor: pointer;
+      left: 390px;
+      top: calc(50% - 6px);
+      &:hover{  background-position: 0 13px;  }
+      &.-show{
+        background-position: 0 48px;
+        &:hover{  background-position: 0 37px;  }
+      }
+      &.-hide{
+        background-position: 0 -1px;
+        &:hover{  background-position: 0 -13px;  }
+      }
+    }
+  }
+  &.-showHint {
+    > p.hint {
+      display: inline-block;
+    }
+  }
+
+}
+
+.form-agreement{
+
+  > span.agree{
+    font-family: Circle-Regular, sans-serif;
+    font-size: 16px;
+    @include mq($from: xs, $until: md) {
+      font-size: 12px;
+    }
+  }
+}

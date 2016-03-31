@@ -1,0 +1,18 @@
+include ../mixins/_review
+section.reputation-reviews.row
+    .column.-xs-12.-md-11.-md-offset-1.head
+        h3.title Reputation
+        nav.nav
+            a(href="javascript:void(0)" title="All reviews").filter.-all.-active All
+                span 16
+            a(href="javascript:void(0)" title="Positive reviews").filter.-positive Positive
+                span 1
+            a(href="javascript:void(0)" title="Neutral reviews").filter.-neutral Neutral
+                span 12
+            a(href="javascript:void(0)" title="Negative reviews").filter.-negative Negative
+                span 100500
+
+    +review("positive")
+    +review("neutral")
+    +review("neutral")
+    +review("negative")
