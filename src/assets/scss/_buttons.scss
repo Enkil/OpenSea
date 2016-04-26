@@ -2,6 +2,10 @@ table.button.op-button{
   border-radius: $global-radius!important;
   box-shadow: 0 5px 10px $shadow;
   overflow: hidden;
+
+  a{
+    white-space: pre-wrap;
+  }
 }
 
 
