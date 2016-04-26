@@ -1336,7 +1336,7 @@ table.button.op-button {
   box-shadow: 0 5px 10px #b9b9b9;
   overflow: hidden; }
   table.button.op-button a {
-    white-space: pre-wrap; }
+    white-space: pre; }
 
 @media only screen and (max-width: 550px) {
   table.button.op-button a {
