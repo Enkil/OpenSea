@@ -1,0 +1,22 @@
+table.footer{
+  background-color: $light-gray;
+
+  th.columns{
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  p {
+    font-size: 10px;
+    color: #979797;
+
+    &:last-child {
+      margin: 0!important;
+    }
+  }
+
+  a{
+    color: #979797;
+    text-decoration: underline;
+  }
+}
