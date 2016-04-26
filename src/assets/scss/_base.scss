@@ -1,3 +1,8 @@
+html{
+  //white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
 .op-body-container{
   margin-top: 20px!important;
   margin-bottom: 50px!important;
@@ -44,4 +49,8 @@ table.reg-welcome{
 
 table.op-mb{
   margin-bottom: 40px;
+}
+
+.text-smaller{
+  font-size: 13px;
 }
