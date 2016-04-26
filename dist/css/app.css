@@ -1329,7 +1329,7 @@ table.op-mb {
   font-size: 13px; }
 
 p {
-  white-space: pre; }
+  white-space: pre-line; }
 
 table.button.op-button {
   border-radius: 3px !important;
