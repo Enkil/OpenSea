@@ -1329,7 +1329,8 @@ table.op-mb {
   font-size: 13px; }
 
 p {
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  word-break: break-all; }
 
 table.button.op-button {
   border-radius: 3px !important;
