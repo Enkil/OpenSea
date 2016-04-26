@@ -8,6 +8,14 @@ table.button.op-button{
   }
 }
 
+table.button.op-button.success{
+  &:hover table td{
+    background-color: $success-color;
+    border-color: $success-color;
+  }
+
+}
+
 
 @media only screen and (max-width: #{$global-breakpoint}) {
   table.button.op-button a{

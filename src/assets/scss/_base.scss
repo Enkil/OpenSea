@@ -54,3 +54,10 @@ p{
   word-wrap: break-word;
   word-break: keep-all;
 }
+
+* {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
