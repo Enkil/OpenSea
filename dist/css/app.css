@@ -1328,6 +1328,9 @@ table.op-mb {
 .text-smaller {
   font-size: 13px; }
 
+p {
+  word-wrap: break-word; }
+
 table.button.op-button {
   border-radius: 3px !important;
   box-shadow: 0 5px 10px #b9b9b9;
