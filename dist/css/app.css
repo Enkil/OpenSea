@@ -1350,14 +1350,14 @@ table.button.op-button.success:hover table td {
   table.button.op-button a {
     font-size: 12px !important; } }
 
-.op-security-icons p {
+.op-left-column-icons p {
   margin-bottom: 0; }
 
-.op-icon-security {
+.op-left-column-icons {
   padding-right: 7px; }
 
 @media only screen and (max-width: 550px) {
-  table.body .op-security-icons .columns, table.body .op-security-icons .column {
+  table.body .op-left-column-icons .columns, table.body .op-left-column-icons .column {
     padding-right: 0 !important; }
-  table.body .op-security-icons .op-security-icon {
+  table.body .op-left-column-icons .op-security-icon {
     padding-right: 10px !important; } }
