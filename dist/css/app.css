@@ -1299,7 +1299,6 @@ table.footer {
   box-shadow: 0 5px 10px #b3b3b3;
   border: 1px solid #b9b9b9 !important;
   border-radius: 3px;
-  display: block;
   border-top: none !important; }
 
 .op-vert-mid {
@@ -1342,8 +1341,6 @@ table.button.op-button {
   border-radius: 3px !important;
   box-shadow: 0 5px 10px #b9b9b9;
   overflow: hidden; }
-  table.button.op-button a {
-    white-space: pre; }
 
 table.button.op-button.success:hover table td {
   background-color: #00b05e;
@@ -1351,7 +1348,7 @@ table.button.op-button.success:hover table td {
 
 @media only screen and (max-width: 550px) {
   table.button.op-button a {
-    font-size: 14px !important; } }
+    font-size: 12px !important; } }
 
 .op-security-icons p {
   margin-bottom: 0; }
